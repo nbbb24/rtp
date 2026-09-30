@@ -1,0 +1,8 @@
+[INFO] UNIFIEDBUS(84497,asc_dumper):2026-09-30-13:49:17.804.228 [UDMA][udma_u_register_log_func:136] libudma registered log successfully.
+[WARNING] UNIFIEDBUS(84497,asc_dumper):2026-09-30-13:49:17.804.310 [UDMA][udma_u_try_register_ummu_log_backend:111] libummu log backend not supported, skipping.
+[INFO] UNIFIEDBUS(84497,asc_dumper):2026-09-30-13:49:17.804.313 [URMA][urma_log.c:urma_register_log_func:75][84497][-][liburma]registered log successfully.
+[INFO] DRV(84497,asc_dumper):2026-09-30-13:49:17.804.315 [drv_urma_log.c:94][ascend][curpid:84497,84497][drv][log][drv_log_set_urma_log_level]Set urma log level successfully. (level=1)
+[INFO] DRV(84497,asc_dumper):2026-09-30-13:49:17.804.318 [drv_urma_log.c:70][ascend][curpid:84497,84497][drv][log][drv_log_urma_register]Register urma log successfully.
+[INFO] UNIFIEDBUS(84497,asc_dumper):2026-09-30-13:49:17.911.048 [URMA][urma_log.c:urma_unregister_log_func:93][84497][-][liburma]Unregistered log successfully.
+[WARNING] UNIFIEDBUS(84497,asc_dumper):2026-09-30-13:49:17.911.054 [UDMA][udma_u_try_restore_ummu_log_default:123] libummu log restore default not supported, skipping.
+[INFO] UNIFIEDBUS(84497,asc_dumper):2026-09-30-13:49:17.911.056 [UDMA][udma_u_unregister_log_func:147] libudma restored to default log output successfully.

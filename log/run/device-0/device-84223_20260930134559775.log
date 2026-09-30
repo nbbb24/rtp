@@ -1,0 +1,103 @@
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:55.927.450 [main.cpp:323][main][tid:29926] Start parameter. deviceId=0, hostPid=1928858, pidSign=, profilingMode=0, vfId=0, logLevel=1, ccecpulogLevel=-1, aicpulogLevel=-1, deviceMode=0, hostProcName=, grpNameNum=0, aicpuProcNum=0, grpNameList=[]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.008.563 [aicpusd_resource_limit.cpp:60][AddToCgroup][tid:29926] Add to cgroup finished, cmd:[cd /var/ && sudo ./tsdaemon_add_to_usermemory.sh memory 29926 0 0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.008.692 [aicpusd_interface_process.cpp:618][GetCurrentRunMode][tid:29926] Current aicpu mode is online (call from host).
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.008.926 [aicpusd_feature_ctrl.cpp:253][InitMsqEnableStatus][tid:29926] The aicpu schedule mode is interrupt
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.008.946 [aicpusd_drv_manager.cpp:165][GetNormalAicpuInfo][tid:29926] aicpuBitMap[504], aicpuNum[6].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.008.969 [aicpusd_drv_manager.cpp:198][GetCcpuInfo][tid:29926] ccpuBitMap[1].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.009.048 [aicpusd_drv_manager.cpp:114][GetNormalAicpuDCpuInfo][tid:29926] GetNormalAicpuDCpuInfo, deviceId[0], aicpu_num[6], aicpu_os_sched[1], ccpu_num[1], ccpu_os_sched[1], dcpu_num[2], dcpu_os_sched[1], tscpu_num[0], tscpu_os_sched[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.009.061 [aicpusd_drv_manager.cpp:281][InitDrvMgrCaluniqueVfId][tid:29926] InitDrvMgr uniqueVfId=0, deviceId=0
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.009.072 [aicpusd_drv_manager.cpp:348][InitDrvMgr][tid:29926] host pid[1928858], host proc name[], vf id[0], first aicpu index[0], aicpu num[6], dcpu base index[1], dcpu num[2].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.009.101 [aicpusd_drv_manager.cpp:546][CheckBindHostPid][tid:29926] Start query process host pid
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.009.464 [aicpusd_drv_manager.cpp:558][CheckBindHostPid][tid:29926] Query process host pid end, ret=0, hostpid=1928858, expect=1928858, cpType=0
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.009.486 [aicpusd_drv_manager.cpp:574][CheckBindHostPid][tid:29926] call drvQueryProcessHostPid successfully, hostpid[1928858], cpType[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.010.121 [aicpusd_resource_manager.cpp:264][InitBufManager][tid:29926] Aicpu schedule SetBuffCfg successfully!
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.012.800 [aicpusd_drv_manager.cpp:419][InitDrvSchedModule][tid:29926] Enable process drv queue msg on ccpu, ret is 0.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.012.885 [aicpusd_monitor.cpp:229][SetModelTimeoutFlag][tid:29926] Not set aicpu model timeout. Env is not set.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.013.615 [aicpusd_monitor.cpp:158][InitMonitor][tid:29926] Init aicpu monitor successfully, taskTimeout=28s, tickFreq=1000000000.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.014.647 [prof_so_manager.cpp:32][tid:29926]:The new profiling so had taken effect.
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.021.299 [drv_share_log.c:215][ascend][curpid:29926,29926][drv][devmm][share_log_read_in_single_module]Open. (udevid=0; tgid=29926)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.031.871 [grp_mng.c:83][ascend][curpid:29926,29926][drv][bufmng][halGrpCreate]Create grp. (grp_name=svm_share_grp_29926; grp_id=21; max_size=0; cache_flag=0)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.031.951 [grp_mng.c:146][ascend][curpid:29926,29926][drv][bufmng][halGrpAddProc]add grp succ, name:svm_share_grp_29926, pid:29926, grp_id:21, admin:1 alloc:1 read:1 write:1 
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.032.415 [buff_recycle_ctx.c:89][ascend][curpid:29926,29926][drv][bufmng][pool_ctx_init]pool_id 21 add task node uid 22 pid 29926
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.032.721 [drv_buff_mbuf.c:71][ascend][curpid:29926,29926][drv][bufmng][mbuf_set_priv_flag]Set mbuf priv flag success. (flag=0, g_mbuf_priv_flag=0)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.032.737 [grp_mng.c:208][ascend][curpid:29926,29926][drv][bufmng][halGrpAttach]grp attach, grp_name:svm_share_grp_29926, grp_id:21, timeout:0ms
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.032.819 [aicpusd_worker.cpp:76][ThreadPool][tid:29926] ThreadPool
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.032.830 [aicpusd_worker.cpp:192][WaitForStop][tid:29926] Wait for stop begin.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.032.837 [aicpusd_worker.cpp:199][WaitForStop][tid:29926] Wait for stop end.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.050.163 [aicpusd_threads_process.cpp:62][LoadKernelSo][tid:29926] Start to preload aicpu so.
+[WARNING] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.050.336 [ae_kernel_lib_fwk.cc:299][LoadTfSo][tid:29926][AICPU_PROCESSER] load tensorflow so failed, ret is[11002]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.160.929 [aicpusd_threads_process.cpp:66][LoadKernelSo][tid:29926] End to preload aicpu so.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.160.947 [aicpusd_threads_process.cpp:82][LoadExtendKernelSo][tid:29926] Start to preload extend kernel so.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.169.225 [aicpusd_threads_process.cpp:86][LoadExtendKernelSo][tid:29926] End to preload extend kernel so.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.171.377 [aicpusd_period_statistic.cpp:133][SetThreadAffinity][tid:29943] aicpu bind by self success
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.174.620 [aicpusd_cust_so_manager.cpp:82][InitAicpuCustSoManager][tid:29926] Cust so manager init successfully, dir=/home/CustAiCpuUser/cust_aicpu_0_0_1928858/, runMode=0, schedMode=0.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.174.659 [main.cpp:352][main][tid:29926] Aicpu schedule start successfully, LD_LIBRARY_PATH=/usr/lib64/aicpu_kernels/0/aicpu_kernels_device/:/usr/lib64/aicpu_kernels/0/aicpu_kernels_device/sand_box/:/home/HwHiAiUser/hs/0/runtime/lib64/:/usr/lib64/device-compat-plugin/0/:/usr/lib64/device-sw-plugin/0/device-sw-plugin/:
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.174.677 [main.cpp:363][main][tid:29926] Aicpu schedule attach and init successfully.
+[INFO] TDT(29926,aicpu_scheduler):2026-09-30-13:45:56.174.701 [tsd_event_client.cpp:404][ReportMsgToTsd][tid:29926] [TsdEventClient] Enter ReportMsgToTsd deviceid[0],hostPid[1928858],vfId[0].
+[INFO] TDT(29926,aicpu_scheduler):2026-09-30-13:45:56.174.768 [tsd_event_client.cpp:420][ReportMsgToTsd][tid:29926] [TsdEventClient] subCapabilityType[8], value[1]
+[INFO] TDT(29926,aicpu_scheduler):2026-09-30-13:45:56.174.866 [tsd_event_client.cpp:427][ReportMsgToTsd][tid:29926] [TsdEventClient] Submit event ReportMsgToTsd to tsd successfully.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.183.701 [main.cpp:205][RegQueueScheduleModuleCallBack][tid:29926] Register queue schedule module callback successfully.
+[INFO] TDT(29926,aicpu_scheduler):2026-09-30-13:45:56.183.855 [tsd_event_client.cpp:256][TsdStartupResponse][tid:29926] [TsdEventClient] TsdStartupResponseProc to dev[0] pid[4112] hostpid[1928858] vfId[0] is running.
+[INFO] TDT(29926,aicpu_scheduler):2026-09-30-13:45:56.184.221 [tsd_event_client.cpp:276][TsdStartupResponse][tid:29926] [TsdEventClient] Submit event TSD_EVENT_START_RSP to tsd successfully.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.184.236 [main.cpp:380][main][tid:29926] Aicpu startup response return successfully.
+[INFO] TDT(29926,aicpu_scheduler):2026-09-30-13:45:56.184.251 [tsd_event_client.cpp:221][DoLoopProcessEvent][tid:29926] [TsdEventClient] Start waiting event, deviceId=0.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.598 [hwts_kernel_model_process.cpp:108][Compute][tid:29941] Begin to process kernel CheckKernelSupported event.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.627 [hwts_kernel_model_process.cpp:123][Compute][tid:29941] Finish to process kernel CheckKernelSupported event retCode[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.552.034 [hwts_kernel_model_process.cpp:108][Compute][tid:29941] Begin to process kernel CheckKernelSupported event.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.552.058 [hwts_kernel_model_process.cpp:123][Compute][tid:29941] Finish to process kernel CheckKernelSupported event retCode[0].
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.592.179 [ra_adp.c:2143]tid:29956,HccpSetAffinity: chipId:0 phyDevid:0 ccpuNum:1, dcpuNum:2, acpuNum:6, cpuId:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.592.805 [ra_adp.c:1872]tid:29961,RaPthread: pthread[ra_thread] is alive!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.595.322 [rs.c:2229]tid:29956,RsGetProductType: [Get][ChipInfo]chip name is 950DT_9581, type:4
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.595.329 [rs.c:2229]tid:29956,RsGetProductType: [Get][ChipInfo]chip name is 950DT_9581, type:4
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.596.562 [rs_tls.c:1951]tid:29956,rs_ssl_init: TLS SWITCH (1)
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.596.715 [rs_tls.c:1670]tid:29956,rs_tls_get_product_type: get product type:4, logic_id:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.065.132 [rs_tls.c:1408]tid:29956,rs_check_key_without_priv: ssl ctx use pridata success
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.065.161 [rs_tls.c:1415]tid:29956,rs_check_key_without_priv: ssl ctx check pridata success
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.493.626 [rs_tls.c:1408]tid:29956,rs_check_key_without_priv: ssl ctx use pridata success
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.493.678 [rs_tls.c:1415]tid:29956,rs_check_key_without_priv: ssl ctx check pridata success
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.494.419 [rs_epoll.c:679]tid:29993,RsConnectHandle: pthread[connect_pthread] is alive!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.494.685 [rs.c:450]tid:29956,RsInit: rs init success, chipId[0]
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.495.205 [rs_ping.c:100]tid:29994,RsPingHandle: pthread[ping_pthread] is alive!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.495.253 [main.c:156]tid:29956,main: hccp init ok cost [903.168030] ms logic_id[0], tgid[1928858]
+[INFO] TDT(29956,hccp_service.bin):2026-09-30-13:45:57.495.278 [tsd_event_client.cpp:256][TsdStartupResponse][tid:29956] [TsdEventClient] TsdStartupResponseProc to dev[0] pid[4112] hostpid[1928858] vfId[0] is running.
+[INFO] TDT(29956,hccp_service.bin):2026-09-30-13:45:57.497.064 [tsd_event_client.cpp:276][TsdStartupResponse][tid:29956] [TsdEventClient] Submit event TSD_EVENT_START_RSP to tsd successfully.
+[INFO] TDT(29956,hccp_service.bin):2026-09-30-13:45:57.497.125 [tsd_event_client.cpp:221][DoLoopProcessEvent][tid:29956] [TsdEventClient] Start waiting event, deviceId=0.
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.498.003 [buff_recycle_ctx.c:89][ascend][curpid:29956,29960][drv][bufmng][pool_ctx_init]pool_id 22 add task node uid 0 pid 29956
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.498.126 [drv_buff_mbuf.c:71][ascend][curpid:29956,29960][drv][bufmng][mbuf_set_priv_flag]Set mbuf priv flag success. (flag=0, g_mbuf_priv_flag=0)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.498.188 [grp_mng.c:272][ascend][curpid:29956,29960][drv][bufmng][buff_private_grp_create_add_attach]grp create add attach success, grp_name:private_buff_grp_29956, grp_id:22, attach timeout:1000ms
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.503.501 [hdc_ub_common.c:514][ascend][curpid:29956,29961][drv][hdc][hdc_get_send_time_cost]hdc send exceed 10 us.(dev_id=0; l_id=228; unique_val=2147741025; type='service_rdma_v2'; jfs_id=10588; jfc_s=8677; find_block:0; memcpy=1; post_jfs_wr=3; wait_jfc=19; poll_jfc:0; ack_rearm_jfc=1; send=24; exceed_times=1
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.510.930 [rs_epoll.c:550]tid:29992,RsEpollHandle: pthread[epoll_pthread] is alive!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.511.704 [ra_adp_async.c:117]tid:29999,RaAsyncPthread: pthread[ra_async_thread] is alive!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.513.362 [dl_urma_function.c:378]tid:29961,RsOpenUrmaSo: urma_api dlopen again, gUrmaApiRefcnt:2
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.515.831 [dl_urma_function.c:378]tid:29961,RsOpenUrmaSo: urma_api dlopen again, gUrmaApiRefcnt:4
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.529.927 [drv_share_log.c:215][ascend][curpid:29956,29961][drv][devmm][share_log_read_in_single_module]Open. (udevid=0; tgid=29956)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:57.535.581 [grp_mng.c:146][ascend][curpid:29926,29934][drv][bufmng][halGrpAddProc]add grp succ, name:svm_share_grp_29926, pid:29956, grp_id:21, admin:0 alloc:1 read:1 write:1 
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.535.754 [buff_recycle_ctx.c:89][ascend][curpid:29956,29961][drv][bufmng][pool_ctx_init]pool_id 21 add task node uid 23 pid 29956
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.535.966 [grp_mng.c:208][ascend][curpid:29956,29961][drv][bufmng][halGrpAttach]grp attach, grp_name:svm_share_grp_29926, grp_id:21, timeout:1000ms
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.538.276 [dms_fault.c:595][ascend][curpid:29956,29961][drv][devmng][halSensorNodeRegister]Sensor node register success. (devid=0; name=roce_rs_29956; NodeType=1551; SensorType=195; AssertEventMask=0x100; DeassertEventMask=0x0)
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.540.670 [rs_ub.c:446]tid:29961,RsUbCtxInit: phy_id:0, eidIndex:0, devIndex:0x10003 init success
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.541.586 [rs_ub.c:1296]tid:29961,RsUbCtxLmemReg: devIndex:0x10003 addr:0x120000017000, len[0x8], flag[0x29c1] segment:0x3ffec0180c0 register success
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.542.398 [rs_ub.c:1296]tid:29961,RsUbCtxLmemReg: devIndex:0x10003 addr:0x3fffffb0000, len[0x4], flag[0x29c1] segment:0x3ffec018330 register success
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.574.462 [rs_ub.c:1296]tid:29961,RsUbCtxLmemReg: devIndex:0x10003 addr:0x100001400000, len[0x40000000], flag[0x29c1] segment:0x3ffec0185a0 register success
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.871.229 [adapter_rts.cc:3087] [29941][adapter_rts.cc][CallBackInitRts] g_deviceType [9] g_deviceLogicId [-1] g_devicePhyId [-1]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.900.098 [aicpu_task_cache.cc:22] [29941][AicpuTaskCache][AicpuTaskCache] create aicpu task cache at 0x000003ffc5857b20: maxCacheBytes[10485760]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.903.077 [ae_so_manager.cc:252][GetApi][tid:29941][AICPU_PROCESSER] Get api RunAicpuThreadInit from so libccl_kernel.so success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.904.409 [aicpusd_mc2_maintenance_thread.cpp:167][SetMc2MantenanceThreadAffinity][tid:30017] aicpu bind by self success. type[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.904.440 [aicpusd_mc2_maintenance_thread.cpp:181][StartProcessEvent][tid:30017] post work sem finish. type[0]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.904.450 [aicpu_daemon_service.cpp:29] [30017]Start background thread
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.904.456 [aicpu_thread_process.cc:156] [29941][InitBackGroundThread]start BackGround thread success.
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.907.942 [rs_socket.c:583]tid:29961,RsSocketListenBindListen: socket bind: family 10, addr ::8:a80:10:0:a0b:6106, port 60001
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:46:57.504.759 [hdc_ub_common.c:514][ascend][curpid:29956,29961][drv][hdc][hdc_get_send_time_cost]hdc send exceed 10 us.(dev_id=0; l_id=228; unique_val=2147741025; type='service_rdma_v2'; jfs_id=10588; jfc_s=8677; find_block:0; memcpy=0; post_jfs_wr=0; wait_jfc=41; poll_jfc:1; ack_rearm_jfc=0; send=43; exceed_times=49325
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.908.947 [rs_drv_socket.c:650]tid:29961,RsSocketListenDelFromEpoll: IP:::8:a80:10:0:a0b:6106 server_port:60001 listen_fd:51 del from epoll:31
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.912.392 [ae_so_manager.cc:252][GetApi][tid:29941][AICPU_PROCESSER] Get api RunAicpuChannelDestroyV2 from so libccl_kernel.so success.
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.912.420 [aicpu_ts_urma_channel_kernel.cc:49] [29941]RunAicpuIndOpChannelDestroyV2Internal start.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.917.783 [ae_so_manager.cc:252][GetApi][tid:29941][AICPU_PROCESSER] Get api RunAicpuThreadDestroy from so libccl_kernel.so success.
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.928.041 [aicpu_thread_process.cc:156] [29941][InitBackGroundThread]start BackGround thread success.
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.770 [rs_socket.c:583]tid:29961,RsSocketListenBindListen: socket bind: family 10, addr ::8:a80:10:0:a0b:6106, port 60001
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:47:57.506.626 [hdc_ub_common.c:514][ascend][curpid:29956,29961][drv][hdc][hdc_get_send_time_cost]hdc send exceed 10 us.(dev_id=0; l_id=228; unique_val=2147741025; type='service_rdma_v2'; jfs_id=10588; jfc_s=8677; find_block:0; memcpy=0; post_jfs_wr=0; wait_jfc=47; poll_jfc:1; ack_rearm_jfc=0; send=49; exceed_times=98719
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:48:57.507.956 [hdc_ub_common.c:514][ascend][curpid:29956,29961][drv][hdc][hdc_get_send_time_cost]hdc send exceed 10 us.(dev_id=0; l_id=228; unique_val=2147741025; type='service_rdma_v2'; jfs_id=10588; jfc_s=8677; find_block:0; memcpy=0; post_jfs_wr=0; wait_jfc=133; poll_jfc:0; ack_rearm_jfc=0; send=134; exceed_times=148199
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.932.805 [rs_drv_socket.c:650]tid:29961,RsSocketListenDelFromEpoll: IP:::8:a80:10:0:a0b:6106 server_port:60001 listen_fd:51 del from epoll:31
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.936.667 [aicpu_ts_urma_channel_kernel.cc:49] [29941]RunAicpuIndOpChannelDestroyV2Internal start.
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.948.736 [rs_ub.c:1325]tid:29961,RsUbCtxLmemUnreg: devIndex:0x10003 segment:0x3ffec0185a0 unregister success
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.957.536 [aicpu_thread_process.cc:156] [29941][InitBackGroundThread]start BackGround thread success.
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.213 [rs_socket.c:583]tid:29961,RsSocketListenBindListen: socket bind: family 10, addr ::8:a80:10:0:a0b:6106, port 60001

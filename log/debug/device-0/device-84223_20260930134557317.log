@@ -1,0 +1,827 @@
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.008.440 [aicpusd_resource_limit.cpp:55][AddToCgroup][tid:29926] Add to cgroup successfully, cmd:[cd /var/ && sudo ./tsdaemon_add_to_usermemory.sh memory 29926 0 0].
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:45:56.009.091 [aicpu_context.cc:229][SetAicpuRunMode][tid:29926][AICPU_SHARDER] Set runMode:[0] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.009.478 [aicpusd_drv_manager.cpp:572][CheckBindHostPid][tid:29926] call drvQueryProcessHostPid result, hostpid[1928858], cpType[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.009.494 [aicpusd_interface_process.cpp:309][InitAICPUScheduler][tid:29926] Bind pid sign success
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.010.089 [aicpusd_resource_manager.cpp:258][InitBufManager][tid:29926] Aicpu schedule Init BufManager!
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.010.841 [aicpusd_drv_manager.cpp:380][InitDrvSchedModule][tid:29926] Attach device[0] to drv scheduler
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.011.497 [esched_adapt.c:50][ascend][curpid:29926,29926][drv][event-sche][sched_set_k2u_time_delta]Attach kernel tick. (user_tick=15249766315968; kernel_tick=15249766313153)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.011.517 [esched_adapt.c:84][ascend][curpid:29926,29926][drv][event-sche][esched_attach_device_inner]Attach device. (ret=0; dev_id=0)
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.011.544 [aicpusd_drv_manager.cpp:601][GetAicpuNumPerDevice][tid:29926] Get aicpu core num[6]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.011.552 [aicpusd_drv_manager.cpp:398][InitDrvSchedModule][tid:29926] Create group[0], device[0], type[1]
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.011.613 [event_sched.c:1076][ascend][curpid:29926,29926][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=0; sched_mode=1; grpName=)
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.011.630 [aicpusd_drv_manager.cpp:413][InitDrvSchedModule][tid:29926] Set event[0] priority[0] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.011.652 [aicpusd_drv_manager.cpp:413][InitDrvSchedModule][tid:29926] Set event[1] priority[0] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.011.662 [aicpusd_drv_manager.cpp:413][InitDrvSchedModule][tid:29926] Set event[2] priority[0] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.011.670 [aicpusd_drv_manager.cpp:413][InitDrvSchedModule][tid:29926] Set event[3] priority[0] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.011.677 [aicpusd_drv_manager.cpp:413][InitDrvSchedModule][tid:29926] Set event[4] priority[0] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.011.685 [aicpusd_drv_manager.cpp:413][InitDrvSchedModule][tid:29926] Set event[5] priority[0] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.011.692 [aicpusd_drv_manager.cpp:413][InitDrvSchedModule][tid:29926] Set event[7] priority[0] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.011.699 [aicpusd_drv_manager.cpp:413][InitDrvSchedModule][tid:29926] Set event[8] priority[0] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.011.708 [aicpusd_drv_manager.cpp:413][InitDrvSchedModule][tid:29926] Set event[9] priority[2] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.011.717 [aicpusd_drv_manager.cpp:413][InitDrvSchedModule][tid:29926] Set event[17] priority[1] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.011.726 [aicpusd_drv_manager.cpp:413][InitDrvSchedModule][tid:29926] Set event[20] priority[0] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.011.735 [aicpusd_drv_manager.cpp:413][InitDrvSchedModule][tid:29926] Set event[21] priority[0] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.011.743 [aicpusd_drv_manager.cpp:413][InitDrvSchedModule][tid:29926] Set event[23] priority[0] success.
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.011.751 [esched_adapt.c:73][ascend][curpid:29926,29926][drv][event-sche][esched_attach_device_inner]Attach refcnt++. (refcnt=2; dev_id=0)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.011.847 [event_sched.c:1076][ascend][curpid:29926,29926][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=32; sched_mode=2; grpName=drv_msg_grp)
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.012.836 [aicpusd_monitor.cpp:121][InitMonitor][tid:29926] Begin to init aicpu monitor.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.012.845 [aicpusd_drv_manager.cpp:589][GetAicpuNum][tid:29926] Get aicpu core num[6], device num[1]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.012.872 [aicpusd_monitor.cpp:447][SetOpTimeoutFlag][tid:29926] Set op timer flag to 1
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.013.550 [aicpusd_monitor.cpp:165][InitAsyncOpTimer][tid:29926] Start initializing async op timer in monitor
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.013.630 [aicpusd_event_manager.cpp:155][InitEventFunc][tid:29926] Init event manager event func success
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.013.646 [aicpusd_event_process.cpp:63][AicpuEventProcess][tid:29926] AicpuEventProcess construct.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.013.663 [aicpusd_threads_process.cpp:100][Start][tid:29926] Aicpu scheduler start, hostpid[1928858], profilingMode[0], runMode[0], vfId[0], schedMode[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.013.674 [aicpusd_drv_manager.cpp:589][GetAicpuNum][tid:29926] Get aicpu core num[6], device num[1]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.013.694 [profiling_adp.cc:166][tid:29926]:Start initializing profiling data info.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.014.699 [prof_so_manager.cpp:63][tid:29926]:Load profiling so successfully. [1]
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.019.230 [esched_adapt.c:73][ascend][curpid:29926,29926][drv][event-sche][esched_attach_device_inner]Attach refcnt++. (refcnt=3; dev_id=0)
+[INFO] UNIFIEDBUS(29926,aicpu_scheduler):2026-09-30-13:45:56.027.600 [UMMU][ummu_allocate_tid:1274] allocate tid = 4312, mapt_mode = 0
+[INFO] UNIFIEDBUS(29926,aicpu_scheduler):2026-09-30-13:45:56.028.520 [UMMU][ummu_allocate_tid:1274] allocate tid = 4314, mapt_mode = 0
+[INFO] UNIFIEDBUS(29926,aicpu_scheduler):2026-09-30-13:45:56.029.196 [UMMU][ummu_allocate_tid:1274] allocate tid = 4316, mapt_mode = 0
+[INFO] UNIFIEDBUS(29926,aicpu_scheduler):2026-09-30-13:45:56.029.708 [UMMU][ummu_allocate_tid:1274] allocate tid = 4318, mapt_mode = 0
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.030.310 [va_reserve_agent.c:76][ascend][curpid:29926,29926][drv][devmm][svm_agent_static_reserve_va]Reserve static va success. (va=0x100000000000; size=167125767421952)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.030.543 [buff_manage_kernel_api.c:170][ascend][curpid:29926,29926][drv][bufmng][buff_pool_get_fd]pid 29926 open dev file, pool_fd 31
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.031.993 [buff_manage_kernel_api.c:350][ascend][curpid:29926,29926][drv][bufmng][buff_pool_attach_ex]Pool attach. (pool=21; fd=31; attach_pid=29926; uid=22; cache_type=0)
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.032.756 [aicpusd_threads_process.cpp:495][MemorySvmDevice][tid:29926] Drv mem init svm device success.
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:45:56.032.773 [aicpu_context.cc:229][SetAicpuRunMode][tid:29926][AICPU_SHARDER] Set runMode:[0] success.
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:45:56.032.797 [aicpu_context.cc:143][InitTaskMonitorContext][tid:29926][AICPU_SHARDER] aicpu core count[6]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.032.847 [aicpusd_drv_manager.cpp:589][GetAicpuNum][tid:29926] Get aicpu core num[6], device num[1]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.032.857 [aicpusd_drv_manager.cpp:595][GetDeviceList][tid:29926] Get device list
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.032.866 [aicpusd_drv_manager.cpp:589][GetAicpuNum][tid:29926] Get aicpu core num[6], device num[1]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.032.878 [aicpusd_worker.cpp:128][CreateWorker][tid:29926] set SIGCHLD to 0, old sighandler[1], errno[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.032.890 [aicpusd_drv_manager.cpp:601][GetAicpuNumPerDevice][tid:29926] Get aicpu core num[6]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.032.899 [aicpusd_worker.cpp:179][CreateOneWorker][tid:29926] CreateOneWorker device[0]:thread[0] started.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.033.001 [aicpusd_worker.cpp:179][CreateOneWorker][tid:29926] CreateOneWorker device[0]:thread[1] started.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.033.236 [aicpusd_worker.cpp:204][Work][tid:29937] Aicpu device[0]:thread[1] started.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.033.270 [aicpusd_worker.cpp:316][AddPidToTask][tid:29937] Bind pid by hal index:1.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.033.399 [aicpusd_worker.cpp:204][Work][tid:29936] Aicpu device[0]:thread[0] started.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.033.409 [aicpusd_worker.cpp:316][AddPidToTask][tid:29936] Bind pid by hal index:0.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.033.631 [aicpusd_worker.cpp:179][CreateOneWorker][tid:29926] CreateOneWorker device[0]:thread[2] started.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.033.739 [aicpusd_worker.cpp:179][CreateOneWorker][tid:29926] CreateOneWorker device[0]:thread[3] started.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.033.811 [aicpusd_worker.cpp:179][CreateOneWorker][tid:29926] CreateOneWorker device[0]:thread[4] started.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.033.918 [aicpusd_worker.cpp:179][CreateOneWorker][tid:29926] CreateOneWorker device[0]:thread[5] started.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.034.023 [aicpusd_worker.cpp:204][Work][tid:29938] Aicpu device[0]:thread[2] started.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.034.039 [aicpusd_worker.cpp:316][AddPidToTask][tid:29938] Bind pid by hal index:2.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.034.091 [aicpusd_worker.cpp:204][Work][tid:29939] Aicpu device[0]:thread[3] started.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.034.101 [aicpusd_worker.cpp:316][AddPidToTask][tid:29939] Bind pid by hal index:3.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.034.118 [aicpusd_worker.cpp:204][Work][tid:29940] Aicpu device[0]:thread[4] started.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.034.127 [aicpusd_worker.cpp:316][AddPidToTask][tid:29940] Bind pid by hal index:4.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.034.146 [aicpusd_worker.cpp:204][Work][tid:29941] Aicpu device[0]:thread[5] started.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.034.156 [aicpusd_worker.cpp:316][AddPidToTask][tid:29941] Bind pid by hal index:5.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.158 [aicpusd_worker.cpp:322][AddPidToTask][tid:29936] halBindCgroup success
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.263 [aicpusd_drv_manager.cpp:601][GetAicpuNumPerDevice][tid:29936] Get aicpu core num[6]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.283 [aicpusd_worker.cpp:384][SetAffinityBySelf][tid:29936] [hw]SetAffinityBySelf, physIndex[3], devNum[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.337 [aicpusd_worker.cpp:399][SetAffinityBySelf][tid:29936] set affinity success, aicpu logical index[0], aicpu physical index[3], device id[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.350 [aicpusd_worker.cpp:452][SetAffinity][tid:29936] aicpu bind tid by self, index[0], deviceId[0], res[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.366 [aicpusd_worker.cpp:470][SetThreadIdRelation][tid:29936] set thread index:0 and tid:29936 relation to List
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.400 [aicpusd_worker.cpp:265][InitInterruptWorker][tid:29936] halEschedSubscribeEvent success, deviceId[0], groupId[0], threadIndex[0] eventBitmap[72057594104120319].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.647 [aicpusd_worker.cpp:322][AddPidToTask][tid:29937] halBindCgroup success
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.677 [aicpusd_drv_manager.cpp:601][GetAicpuNumPerDevice][tid:29937] Get aicpu core num[6]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.685 [aicpusd_worker.cpp:384][SetAffinityBySelf][tid:29937] [hw]SetAffinityBySelf, physIndex[4], devNum[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.736 [aicpusd_worker.cpp:399][SetAffinityBySelf][tid:29937] set affinity success, aicpu logical index[1], aicpu physical index[4], device id[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.781 [aicpusd_worker.cpp:452][SetAffinity][tid:29937] aicpu bind tid by self, index[1], deviceId[0], res[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.793 [aicpusd_worker.cpp:470][SetThreadIdRelation][tid:29937] set thread index:1 and tid:29937 relation to List
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.816 [aicpusd_worker.cpp:322][AddPidToTask][tid:29939] halBindCgroup success
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.850 [aicpusd_drv_manager.cpp:601][GetAicpuNumPerDevice][tid:29939] Get aicpu core num[6]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.859 [aicpusd_worker.cpp:384][SetAffinityBySelf][tid:29939] [hw]SetAffinityBySelf, physIndex[6], devNum[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.823 [aicpusd_worker.cpp:265][InitInterruptWorker][tid:29937] halEschedSubscribeEvent success, deviceId[0], groupId[0], threadIndex[1] eventBitmap[72057594104120319].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.903 [aicpusd_worker.cpp:322][AddPidToTask][tid:29940] halBindCgroup success
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.938 [aicpusd_drv_manager.cpp:601][GetAicpuNumPerDevice][tid:29940] Get aicpu core num[6]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.951 [aicpusd_worker.cpp:384][SetAffinityBySelf][tid:29940] [hw]SetAffinityBySelf, physIndex[7], devNum[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.747 [aicpusd_worker.cpp:322][AddPidToTask][tid:29938] halBindCgroup success
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.028 [aicpusd_drv_manager.cpp:601][GetAicpuNumPerDevice][tid:29938] Get aicpu core num[6]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.039 [aicpusd_worker.cpp:384][SetAffinityBySelf][tid:29938] [hw]SetAffinityBySelf, physIndex[5], devNum[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.957 [aicpusd_worker.cpp:399][SetAffinityBySelf][tid:29939] set affinity success, aicpu logical index[3], aicpu physical index[6], device id[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.184 [aicpusd_worker.cpp:452][SetAffinity][tid:29939] aicpu bind tid by self, index[3], deviceId[0], res[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.220 [aicpusd_worker.cpp:470][SetThreadIdRelation][tid:29939] set thread index:3 and tid:29939 relation to List
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.120 [aicpusd_worker.cpp:399][SetAffinityBySelf][tid:29938] set affinity success, aicpu logical index[2], aicpu physical index[5], device id[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.297 [aicpusd_worker.cpp:452][SetAffinity][tid:29938] aicpu bind tid by self, index[2], deviceId[0], res[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.325 [aicpusd_worker.cpp:470][SetThreadIdRelation][tid:29938] set thread index:2 and tid:29938 relation to List
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.271 [aicpusd_worker.cpp:265][InitInterruptWorker][tid:29939] halEschedSubscribeEvent success, deviceId[0], groupId[0], threadIndex[3] eventBitmap[72057594104120319].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.047.789 [aicpusd_worker.cpp:322][AddPidToTask][tid:29941] halBindCgroup success
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.436 [aicpusd_drv_manager.cpp:601][GetAicpuNumPerDevice][tid:29941] Get aicpu core num[6]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.052 [aicpusd_worker.cpp:399][SetAffinityBySelf][tid:29940] set affinity success, aicpu logical index[4], aicpu physical index[7], device id[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.532 [aicpusd_worker.cpp:452][SetAffinity][tid:29940] aicpu bind tid by self, index[4], deviceId[0], res[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.568 [aicpusd_worker.cpp:470][SetThreadIdRelation][tid:29940] set thread index:4 and tid:29940 relation to List
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.359 [aicpusd_worker.cpp:265][InitInterruptWorker][tid:29938] halEschedSubscribeEvent success, deviceId[0], groupId[0], threadIndex[2] eventBitmap[72057594104120319].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.449 [aicpusd_worker.cpp:384][SetAffinityBySelf][tid:29941] [hw]SetAffinityBySelf, physIndex[8], devNum[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.626 [aicpusd_worker.cpp:265][InitInterruptWorker][tid:29940] halEschedSubscribeEvent success, deviceId[0], groupId[0], threadIndex[4] eventBitmap[72057594104120319].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.789 [aicpusd_worker.cpp:399][SetAffinityBySelf][tid:29941] set affinity success, aicpu logical index[5], aicpu physical index[8], device id[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.834 [aicpusd_worker.cpp:452][SetAffinity][tid:29941] aicpu bind tid by self, index[5], deviceId[0], res[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.844 [aicpusd_worker.cpp:470][SetThreadIdRelation][tid:29941] set thread index:5 and tid:29941 relation to List
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.048.870 [aicpusd_worker.cpp:265][InitInterruptWorker][tid:29941] halEschedSubscribeEvent success, deviceId[0], groupId[0], threadIndex[5] eventBitmap[72057594104120319].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.049.036 [aicpusd_worker.cpp:163][CreateWorker][tid:29926] set SIGCHLD to old sighandler[1]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.050.041 [aicpusd_monitor.cpp:408][Run][tid:29926] Aicpu monitor thread running
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.050.148 [aicpusd_drv_manager.cpp:595][GetDeviceList][tid:29926] Get device list
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.050.178 [ae_kernel_lib_manager.cc:78][BatchLoadKernelSo][tid:29926][AICPU_PROCESSER] Start to batch load kernel so. kernelType=2, loadSoNum=3.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.050.299 [ae_kernel_lib_fwk.cc:148][Init][tid:29926][AICPU_PROCESSER] FWKernelTfImpl init success, soFile_=/usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libtf_kernels.so.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.050.313 [ae_kernel_lib_fwk.cc:109][BatchLoadKernelSo][tid:29926][AICPU_PROCESSER] Begin to batch load kernel so, kernelType:[2].
+[WARNING] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.050.325 [ae_so_manager.cc:187][OpenSo][tid:29926][AICPU_PROCESSER] Format to realpath failed:[], path:[]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.050.353 [ae_so_manager.cc:191][OpenSo][tid:29926][AICPU_PROCESSER] Open so /usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libtf_kernels.so begin.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.125.327 [aicpu_process_state.cc:32][operator()][tid:29926][TFAdapter] MallocMemory, func=new, size=144, purpose=AICPUProcessState object
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.125.503 [tf_adpt_session_mgr.cc:409][Initialize][tid:29926][TFAdapter] SessionMgr Initialize success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.143.586 [ae_so_manager.cc:200][OpenSo][tid:29926][AICPU_PROCESSER] Open so /usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libtf_kernels.so success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.143.789 [ae_so_manager.cc:586][CreateSingleSoMgr][tid:29926][AICPU_PROCESSER] soname[/usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libaicpu_kernels.so]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.143.815 [ae_so_manager.cc:589][CreateSingleSoMgr][tid:29926][AICPU_PROCESSER] MallocMemory, func=new, size=152, purpose=SingleSoManager object
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.143.933 [ae_so_manager.cc:191][OpenSo][tid:29926][AICPU_PROCESSER] Open so /usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libaicpu_kernels.so begin.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.151.285 [ae_so_manager.cc:200][OpenSo][tid:29926][AICPU_PROCESSER] Open so /usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libaicpu_kernels.so success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.151.443 [ae_so_manager.cc:619][CreateSingleSoMgr][tid:29926][AICPU_PROCESSER] Loaded so successfully, soFile=/usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libaicpu_kernels.so.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.151.479 [ae_so_manager.cc:586][CreateSingleSoMgr][tid:29926][AICPU_PROCESSER] soname[/usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libcpu_kernels.so]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.151.489 [ae_so_manager.cc:589][CreateSingleSoMgr][tid:29926][AICPU_PROCESSER] MallocMemory, func=new, size=152, purpose=SingleSoManager object
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.151.599 [ae_so_manager.cc:191][OpenSo][tid:29926][AICPU_PROCESSER] Open so /usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libcpu_kernels.so begin.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.160.723 [ae_so_manager.cc:200][OpenSo][tid:29926][AICPU_PROCESSER] Open so /usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libcpu_kernels.so success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.160.890 [ae_so_manager.cc:619][CreateSingleSoMgr][tid:29926][AICPU_PROCESSER] Loaded so successfully, soFile=/usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libcpu_kernels.so.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.160.908 [ae_kernel_lib_manager.cc:108][BatchLoadKernelSo][tid:29926][AICPU_PROCESSER] Finish to batch load kernel so. loadSoNum=3.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.160.957 [ae_kernel_lib_manager.cc:78][BatchLoadKernelSo][tid:29926][AICPU_PROCESSER] Start to batch load kernel so. kernelType=2, loadSoNum=1.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.160.985 [ae_so_manager.cc:586][CreateSingleSoMgr][tid:29926][AICPU_PROCESSER] soname[/usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libaicpu_extend_kernels.so]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.160.995 [ae_so_manager.cc:589][CreateSingleSoMgr][tid:29926][AICPU_PROCESSER] MallocMemory, func=new, size=152, purpose=SingleSoManager object
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.161.103 [ae_so_manager.cc:191][OpenSo][tid:29926][AICPU_PROCESSER] Open so /usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libaicpu_extend_kernels.so begin.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.169.037 [ae_so_manager.cc:200][OpenSo][tid:29926][AICPU_PROCESSER] Open so /usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libaicpu_extend_kernels.so success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.169.189 [ae_so_manager.cc:619][CreateSingleSoMgr][tid:29926][AICPU_PROCESSER] Loaded so successfully, soFile=/usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libaicpu_extend_kernels.so.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.169.209 [ae_kernel_lib_manager.cc:108][BatchLoadKernelSo][tid:29926][AICPU_PROCESSER] Finish to batch load kernel so. loadSoNum=1.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.169.239 [aicpusd_threads_process.cpp:172][Start][tid:29926] Aicpu scheduler start successfully, deviceId[0], hostpid[1928858], profilingMode[0], runMode[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.169.284 [aicpusd_period_statistic.cpp:100][InitStatistic][tid:29926] Start initializing statistics, deviceId:0, hostPid:1928858
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.171.201 [aicpusd_period_statistic.cpp:126][SetThreadAffinity][tid:29943] prepare bind threadId=4397790981216 to cpuId=0
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.171.716 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:63468 KB, vmHwm:63468 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.171.954 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.172.021 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.174.125 [aicpusd_sqe_adapter.cpp:48][AicpuSqeAdapter][tid:29926] Enter AicpuSqeAdapter constructor, using version init, version[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.174.304 [aicpusd_sqe_adapter.cpp:761][AicpuNoticeTsPidResponse][tid:29926] Aicpu notice ts pid response.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.174.315 [aicpusd_sqe_adapter.cpp:942][ResponseToTs][tid:29926] Begin to respond use TsAicpuSqe.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.174.415 [aicpusd_sqe_adapter.cpp:957][ResponseToTs][tid:29926] Finished to response use TsAicpuSqe.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.174.611 [aicpusd_cust_so_manager.cpp:813][InitFileLocker][tid:29926] Init cust so file locker success, path=/home/CustAiCpuUser/lib_locker, fd=32
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.174.630 [aicpusd_interface_process.cpp:346][InitAICPUScheduler][tid:29926] Successfully started compute process, deviceId[0], hostPid[1928858], runMode[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.174.670 [main.cpp:85][AttachHostGroup][tid:29926] There is not group need to be attached
+[INFO] TDT(29926,aicpu_scheduler):2026-09-30-13:45:56.174.810 [tsd_event_client.cpp:208][SubmitEvent][tid:29926] [TsdEventClient] Begin submit event to dev[0] pid[4112] eventType[19] subeventId[8].
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.183.879 [esched_adapt.c:73][ascend][curpid:29926,29926][drv][event-sche][esched_attach_device_inner]Attach refcnt++. (refcnt=4; dev_id=0)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.184.040 [event_sched.c:1076][ascend][curpid:29926,29926][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=30; sched_mode=2; grpName=)
+[INFO] TDT(29926,aicpu_scheduler):2026-09-30-13:45:56.184.055 [tsd_event_client.cpp:452][IsSubscribe][tid:29926] [TsdEventClient] halEschedCreateGrp dev[0] group[30] type[2] success
+[INFO] TDT(29926,aicpu_scheduler):2026-09-30-13:45:56.184.069 [tsd_event_interface.cpp:44][SubscribeEvent][tid:29926] Dev[0] begin subscribe event mask[524288][19].
+[INFO] TDT(29926,aicpu_scheduler):2026-09-30-13:45:56.184.085 [tsd_event_interface.cpp:51][SubscribeEvent][tid:29926] halEschedSubscribeEvent success, deviceId[0], groupId[30], threadIndex[0] eventBitmap[524288].
+[INFO] TDT(29926,aicpu_scheduler):2026-09-30-13:45:56.184.159 [tsd_event_client.cpp:208][SubmitEvent][tid:29926] [TsdEventClient] Begin submit event to dev[0] pid[4112] eventType[19] subeventId[0].
+[INFO] UNIFIEDBUS(29926,aicpu_scheduler):2026-09-30-13:45:56.468.973 [UMMU][ummu_allocate_tid:1274] allocate tid = 4321, mapt_mode = 0
+[INFO] UNIFIEDBUS(29926,aicpu_scheduler):2026-09-30-13:45:56.469.651 [UMMU][ummu_allocate_tid:1274] allocate tid = 4323, mapt_mode = 0
+[INFO] UNIFIEDBUS(29926,aicpu_scheduler):2026-09-30-13:45:56.470.078 [UMMU][ummu_allocate_tid:1274] allocate tid = 4325, mapt_mode = 0
+[INFO] UNIFIEDBUS(29926,aicpu_scheduler):2026-09-30-13:45:56.470.475 [UMMU][ummu_allocate_tid:1274] allocate tid = 4327, mapt_mode = 0
+[INFO] UNIFIEDBUS(29926,aicpu_scheduler):2026-09-30-13:45:56.470.932 [UMMU][ummu_allocate_tid:1274] allocate tid = 4329, mapt_mode = 0
+[INFO] UNIFIEDBUS(29926,aicpu_scheduler):2026-09-30-13:45:56.471.368 [UMMU][ummu_allocate_tid:1274] allocate tid = 4331, mapt_mode = 0
+[INFO] UNIFIEDBUS(29926,aicpu_scheduler):2026-09-30-13:45:56.471.772 [UMMU][ummu_allocate_tid:1274] allocate tid = 4333, mapt_mode = 0
+[INFO] UNIFIEDBUS(29926,aicpu_scheduler):2026-09-30-13:45:56.472.167 [UMMU][ummu_allocate_tid:1274] allocate tid = 4335, mapt_mode = 0
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.472.240 [trs_sqcq.c:471][ascend][curpid:29926,29934][drv][tsdrv][trs_dev_sq_cq_init]Sqcq init. (devid=0)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.473.346 [trs_sqcq.c:382][ascend][curpid:29926,29934][drv][tsdrv][trs_id_type_init]Id type init success. (dev_id=0; ts_id=0; id_type=6; num=2044)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.474.437 [trs_sqcq.c:382][ascend][curpid:29926,29934][drv][tsdrv][trs_id_type_init]Id type init success. (dev_id=0; ts_id=0; id_type=7; num=2044)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.475.347 [trs_sqcq.c:382][ascend][curpid:29926,29934][drv][tsdrv][trs_id_type_init]Id type init success. (dev_id=0; ts_id=0; id_type=10; num=1024)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.475.918 [trs_sqcq.c:382][ascend][curpid:29926,29934][drv][tsdrv][trs_id_type_init]Id type init success. (dev_id=0; ts_id=0; id_type=11; num=1024)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.517.913 [trs_sqcq.c:382][ascend][curpid:29926,29934][drv][tsdrv][trs_id_type_init]Id type init success. (dev_id=0; ts_id=0; id_type=12; num=65536)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.518.164 [trs_sqcq.c:382][ascend][curpid:29926,29934][drv][tsdrv][trs_id_type_init]Id type init success. (dev_id=0; ts_id=0; id_type=8; num=16)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.518.188 [trs_sqcq.c:382][ascend][curpid:29926,29934][drv][tsdrv][trs_id_type_init]Id type init success. (dev_id=0; ts_id=0; id_type=9; num=16)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.518.201 [trs_sqcq.c:382][ascend][curpid:29926,29934][drv][tsdrv][trs_id_type_init]Id type init success. (dev_id=0; ts_id=0; id_type=13; num=1)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.518.212 [trs_sqcq.c:382][ascend][curpid:29926,29934][drv][tsdrv][trs_id_type_init]Id type init success. (dev_id=0; ts_id=0; id_type=14; num=1)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.518.228 [esched_adapt.c:73][ascend][curpid:29926,29934][drv][event-sche][esched_attach_device_inner]Attach refcnt++. (refcnt=5; dev_id=0)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.518.587 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=11; sched_mode=2; grpName=)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.521.559 [trs_dev_drv.c:504][ascend][curpid:29926,29934][drv][tsdrv][drvDeviceOpenComm]Open success. (devid=0; fd=36; mmap_fd=37)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.524.484 [esched_adapt.c:73][ascend][curpid:29926,29934][drv][event-sche][esched_attach_device_inner]Attach refcnt++. (refcnt=6; dev_id=0)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.524.715 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=33; sched_mode=2; grpName=ESCHED_GRP_0)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.524.930 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=34; sched_mode=2; grpName=ESCHED_GRP_1)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.525.036 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=35; sched_mode=2; grpName=ESCHED_GRP_2)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.525.133 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=36; sched_mode=2; grpName=ESCHED_GRP_3)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.525.240 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=37; sched_mode=2; grpName=ESCHED_GRP_4)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.525.326 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=38; sched_mode=2; grpName=ESCHED_GRP_5)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.525.401 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=39; sched_mode=2; grpName=ESCHED_GRP_6)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.525.479 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=40; sched_mode=2; grpName=ESCHED_GRP_7)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.525.557 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=41; sched_mode=2; grpName=ESCHED_GRP_8)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.525.645 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=42; sched_mode=2; grpName=ESCHED_GRP_9)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.525.721 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=43; sched_mode=2; grpName=ESCHED_GRP_10)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.525.802 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=44; sched_mode=2; grpName=ESCHED_GRP_11)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.525.886 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=45; sched_mode=2; grpName=ESCHED_GRP_12)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.525.964 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=46; sched_mode=2; grpName=ESCHED_GRP_13)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.526.051 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=47; sched_mode=2; grpName=ESCHED_GRP_14)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.526.126 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=48; sched_mode=2; grpName=ESCHED_GRP_15)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.526.274 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=49; sched_mode=1; grpName=ESCHED_GRP_AI)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.526.285 [event_sched_app.c:224][ascend][curpid:29926,29934][drv][event-sche][esched_aicpu_res_init]Init aicpu sync msg grp. (gid=49)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.526.432 [event_sched.c:1076][ascend][curpid:29926,29934][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=50; sched_mode=2; grpName=DRV_ESCHED_GRP)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.527.150 [event_sched_app.c:258][ascend][curpid:29926,29934][drv][event-sche][esched_drv_res_init]Init drv inner sync res group success. (dev_id=0, gid=50)
+[INFO] DRV(29926,aicpu_scheduler):2026-09-30-13:45:56.527.165 [event_sched_app.c:297][ascend][curpid:29926,29934][drv][event-sche][esched_res_init]Init sync res group success. (dev_id=0)
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.549.912 [aicpusd_event_manager.cpp:578][ProcessHWTSControlEvent][tid:29941] Begin to process version[0] ctrl msg.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.549.936 [aicpusd_sqe_adapter.cpp:20][AicpuSqeAdapter][tid:29941] Enter AicpuSqeAdapter constructor, using TsAicpuSqe init, pid[0], cmd_type[0], vf id[0],tid[0], ts id[0], version[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.549.963 [aicpusd_event_manager.cpp:406][ProcessHWTSControlEventV0][tid:29941] Begin to process version[0] ctrl msg, cmd type[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.549.972 [aicpusd_event_process.cpp:434][ProcessMsgVersionEvent][tid:29941] Begin to process msg version event.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.549.980 [aicpusd_sqe_adapter.cpp:124][GetAicpuMsgVersionInfo][tid:29941] Get msg version msg: magic num[23130], version[1].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.549.987 [aicpusd_event_process.cpp:448][ProcessMsgVersionEvent][tid:29941] Set msg version [1].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.549.997 [aicpusd_event_process.cpp:450][ProcessMsgVersionEvent][tid:29941] Begin to send response msg version.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.550.004 [aicpusd_sqe_adapter.cpp:139][AicpuMsgVersionResponseToTs][tid:29941] Msg version response info: cmd_type[0], ret code[0], stream id[0], task id[4294967295].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.550.013 [aicpusd_sqe_adapter.cpp:964][ResponseToTs][tid:29941] Begin to respond use TsAicpuMsgInfo.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.550.028 [aicpusd_sqe_adapter.cpp:980][ResponseToTs][tid:29941] Finished to response use TsAicpuMsgInfo.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.550.037 [aicpusd_event_process.cpp:452][ProcessMsgVersionEvent][tid:29941] Finished to send response msg version information, ret[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.550.047 [aicpusd_event_manager.cpp:982][ProcTsCtrlEvent][tid:29941] Finish to process CTRL event, eventid[5], threadIndex[5], ret[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.522 [aicpusd_event_manager.cpp:596][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[2] and task id[2] from hwts.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.532 [aicpusd_event_manager.cpp:607][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[65535] and task id[2] in version[1].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.539 [aicpusd_event_manager.cpp:677][HWTSKernelEventMessageParse][tid:29941] Kernel type of current task is [2], dataDumpEnableMode[0].
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.560 [aicpu_context.cc:196][SetTaskAndStreamId][tid:29941][AICPU_SHARDER] Set taskId:[2] and streamId:[65535] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.569 [aicpusd_event_manager.cpp:797][ExecuteHWTSEventTask][tid:29941] Begin to ExecuteTsKernelTask, mailboxId[3], serialNo[79], streamId[65535], taskId[2], dataDumpEnableMode[0], kernelType[2], subeventId[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.578 [aicpusd_event_process.cpp:844][ExecuteLogicKernel][tid:29941] Task kernel name[CheckKernelSupported].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.588 [hwts_kernel_register.cpp:32][RunTsKernelTaskProcess][tid:29941] Begin to process kernelName[CheckKernelSupported].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.606 [hwts_kernel_model_process.cpp:120][Compute][tid:29941] Task kernel name[tsKernel:CloseAicpuMonitor].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.617 [hwts_kernel_register.cpp:50][CheckTsKernelSupported][tid:29941] check hwts process kernel[CloseAicpuMonitor] supported
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.634 [hwts_kernel_register.cpp:37][RunTsKernelTaskProcess][tid:29941] End to process kernelName[CheckKernelSupported] result[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.647 [aicpusd_event_manager.cpp:778][ProcessHWTSKernelEvent][tid:29941] End send ack to Ts, kernelType[2], deviceId[0], subevent_id[0], mailboxId[3], serialNo[79], streamId[65535], taskId[2], result[0], originResult[0], status[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.762 [aicpusd_event_manager.cpp:596][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[3] and task id[3] from hwts.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.772 [aicpusd_event_manager.cpp:607][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[65535] and task id[3] in version[1].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.780 [aicpusd_event_manager.cpp:677][HWTSKernelEventMessageParse][tid:29941] Kernel type of current task is [2], dataDumpEnableMode[0].
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.788 [aicpu_context.cc:196][SetTaskAndStreamId][tid:29941][AICPU_SHARDER] Set taskId:[3] and streamId:[65535] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.795 [aicpusd_event_manager.cpp:797][ExecuteHWTSEventTask][tid:29941] Begin to ExecuteTsKernelTask, mailboxId[3], serialNo[80], streamId[65535], taskId[3], dataDumpEnableMode[0], kernelType[2], subeventId[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.806 [aicpusd_event_process.cpp:844][ExecuteLogicKernel][tid:29941] Task kernel name[CloseAicpuMonitor].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.813 [hwts_kernel_register.cpp:32][RunTsKernelTaskProcess][tid:29941] Begin to process kernelName[CloseAicpuMonitor].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.820 [hwts_kernel_close_monitor.cpp:27][Compute][tid:29941] Begin to process ts kernel CloseAicpuMonitor event.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.828 [hwts_kernel_close_monitor.cpp:37][Compute][tid:29941] Process CloseAicpuMonitor, monitorEn[1], closeFlag[1].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.837 [hwts_kernel_register.cpp:37][RunTsKernelTaskProcess][tid:29941] End to process kernelName[CloseAicpuMonitor] result[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.846 [aicpusd_event_manager.cpp:778][ProcessHWTSKernelEvent][tid:29941] End send ack to Ts, kernelType[2], deviceId[0], subevent_id[0], mailboxId[3], serialNo[80], streamId[65535], taskId[3], result[0], originResult[0], status[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.977 [aicpusd_event_manager.cpp:596][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[4] and task id[4] from hwts.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.988 [aicpusd_event_manager.cpp:607][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[65535] and task id[4] in version[1].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.551.994 [aicpusd_event_manager.cpp:677][HWTSKernelEventMessageParse][tid:29941] Kernel type of current task is [2], dataDumpEnableMode[0].
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:45:56.552.002 [aicpu_context.cc:196][SetTaskAndStreamId][tid:29941][AICPU_SHARDER] Set taskId:[4] and streamId:[65535] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.552.009 [aicpusd_event_manager.cpp:797][ExecuteHWTSEventTask][tid:29941] Begin to ExecuteTsKernelTask, mailboxId[3], serialNo[81], streamId[65535], taskId[4], dataDumpEnableMode[0], kernelType[2], subeventId[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.552.019 [aicpusd_event_process.cpp:844][ExecuteLogicKernel][tid:29941] Task kernel name[CheckKernelSupported].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.552.026 [hwts_kernel_register.cpp:32][RunTsKernelTaskProcess][tid:29941] Begin to process kernelName[CheckKernelSupported].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.552.041 [hwts_kernel_model_process.cpp:120][Compute][tid:29941] Task kernel name[tsKernel:SetAicpuDfx].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.552.049 [hwts_kernel_register.cpp:50][CheckTsKernelSupported][tid:29941] check hwts process kernel[SetAicpuDfx] supported
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.552.065 [hwts_kernel_register.cpp:37][RunTsKernelTaskProcess][tid:29941] End to process kernelName[CheckKernelSupported] result[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:56.552.075 [aicpusd_event_manager.cpp:778][ProcessHWTSKernelEvent][tid:29941] End send ack to Ts, kernelType[2], deviceId[0], subevent_id[0], mailboxId[3], serialNo[81], streamId[65535], taskId[4], result[0], originResult[0], status[0].
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.592.088 [ra_adp.c:2185]tid:29956,HccpInit: hccp[0] hdc_type[18] white_list_status[1] init start
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:56.592.127 [dl_hal_function.c:279]DlHalInit: dl_hal_init success!
+[WARNING] NET(29956,hccp_service.bin):2026-09-30-13:45:56.592.172 [dl_hal_function.c:325]DlHalGetPhyDevIdByudevId: dlHalGetPhyDevIdByudevId is NULL
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:56.592.507 [hdc_server.c:265][ascend][curpid:29956,29956][drv][hdc][drvHdcServerCreate]Create server success. (listen_device=0)
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.592.701 [ra_adp.c:2054]tid:29960,RaHwHdcInit: chip_id(0)
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.594.624 [ra_adp.c:2227]tid:29956,HccpInit: ra_hw_init ok cost [2.427000] ms
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:56.595.284 [dl_hal_function.c:279]DlHalInit: dl_hal_init success!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.595.312 [rs.c:232]tid:29956,RsPthreadMutexInit: mutex init ok
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.595.972 [dl_aubdfx_function.c:38]tid:29956,RsOpenAubdfxSo: [notify][event]dlopen libaubdfx_u.so success
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:56.596.195 [esched_adapt.c:50][ascend][curpid:29956,29956][drv][event-sche][sched_set_k2u_time_delta]Attach kernel tick. (user_tick=15250351015823; kernel_tick=15250351014594)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:56.596.214 [esched_adapt.c:84][ascend][curpid:29956,29956][drv][event-sche][esched_attach_device_inner]Attach device. (ret=0; dev_id=0)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:56.596.271 [event_sched.c:1076][ascend][curpid:29956,29956][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=0; sched_mode=2; grpName=)
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:56.596.544 [tls_common.c:257]get_tls_enable_from_hcdev: read enable status from hccn_cdev.ko success.
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:56.596.666 [dl_hal_function.c:279]DlHalInit: dl_hal_init success!
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:56.596.705 [dl_hal_function.c:254]DlHalDeinit: dl_hal_deinit success!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.596.721 [rs_tls.c:1689]tid:29956,rs_ssl_check_product_capability: product 4 capability acquisition is available, logic_id:0
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:56.596.961 [krsa.c:1336]krsa_provider_init: kernel_rsa provider and default provider loaded successfully
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:56.601.598 [tls_common.c:288]get_flash_tls_config: read hccp_certs_mng_cb from flash success.
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:56.601.655 [tls_common.c:257]get_tls_enable_from_hcdev: read enable status from hccn_cdev.ko success.
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:56.601.948 [tls_common.c:288]get_flash_tls_config: read hccp_certs_eqpt_cb1 from flash success.
+[WARNING] NET(29956,hccp_service.bin):2026-09-30-13:45:56.712.290 [tls_common.c:173]dev_read_flash: flash[hccp_certs_eqpt_cb2] is not set before, dev[0] ret[-1] err_code[2].
+[WARNING] NET(29956,hccp_service.bin):2026-09-30-13:45:56.800.119 [tls_common.c:173]dev_read_flash: flash[hccp_certs_eqpt_cb3] is not set before, dev[0] ret[-1] err_code[2].
+[WARNING] NET(29956,hccp_service.bin):2026-09-30-13:45:56.886.186 [tls_common.c:173]dev_read_flash: flash[hccp_certs_eqpt_cb4] is not set before, dev[0] ret[-1] err_code[2].
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.886.288 [rs_tls.c:1008]tid:29956,rs_ssl_get_ca_data: get certs count 3
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.886.318 [rs_tls.c:1009]tid:29956,rs_ssl_get_ca_data: get new certs count 3 from cb1, 0 from cb2, 0 from cb3, 0 from cb4
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.887.858 [rs_tls.c:424]tid:29956,rs_tls_load_cert: read x509 success
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.887.932 [rs_tls.c:564]tid:29956,rs_ssl_verify_cert_chain: rs_tls_load_cert for leaf_cert ok
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.887.951 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:1, new_cert_len:2097
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.086 [rs_tls.c:424]tid:29956,rs_tls_load_cert: read x509 success
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.100 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:2, new_cert_len:2012
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.200 [rs_tls.c:424]tid:29956,rs_tls_load_cert: read x509 success
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.210 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:3, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.218 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 0 cert 3 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.224 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:4, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.230 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 0 cert 4 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.236 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:5, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.245 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 0 cert 5 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.251 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:6, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.257 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 0 cert 6 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.263 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:7, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.269 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 0 cert 7 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.275 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:0, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.290 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 1 cert 0 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.297 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:1, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.302 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 1 cert 1 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.311 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:2, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.317 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 1 cert 2 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.325 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:3, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.330 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 1 cert 3 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.337 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:4, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.343 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 1 cert 4 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.349 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:5, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.357 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 1 cert 5 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.364 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:6, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.370 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 1 cert 6 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.376 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:7, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.383 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 1 cert 7 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.390 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:0, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.397 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 2 cert 0 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.403 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:1, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.409 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 2 cert 1 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.416 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:2, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.422 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 2 cert 2 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.429 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:3, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.441 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 2 cert 3 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.448 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:4, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.454 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 2 cert 4 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.459 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:5, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.465 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 2 cert 5 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.472 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:6, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.478 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 2 cert 6 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.485 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:7, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.490 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 2 cert 7 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.497 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:0, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.504 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 3 cert 0 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.510 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:1, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.516 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 3 cert 1 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.522 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:2, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.528 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 3 cert 2 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.535 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:3, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.541 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 3 cert 3 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.547 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:4, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.553 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 3 cert 4 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.559 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:5, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.565 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 3 cert 5 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.572 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:6, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.578 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 3 cert 6 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.584 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:7, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.596 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 3 cert 7 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.888.603 [rs_tls.c:549]tid:29956,rs_ssl_x509_store_init: add cert ok
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.889.755 [rs_tls.c:488]tid:29956,rs_ssl_verify_cert: X509_verify_cert ok
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.889.982 [rs_tls.c:424]tid:29956,rs_tls_load_cert: read x509 success
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.890.109 [rs_tls.c:424]tid:29956,rs_tls_load_cert: read x509 success
+[WARNING] NET(29956,hccp_service.bin):2026-09-30-13:45:56.975.692 [tls_common.c:173]dev_read_flash: flash[hccp_certs_revoc_cb] is not set before, dev[0] ret[-1] err_code[2].
+[WARNING] HCCP(29956,hccp_service.bin):2026-09-30-13:45:56.975.745 [rs_tls.c:1444]tid:29956,rs_ssl_get_crl_data: no crl data, ret -2, crl_len 0, buf_len 0
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:56.976.180 [tls_common.c:288]get_flash_tls_config: read hccp_certs_mng_cb from flash success.
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:56.976.236 [tls_common.c:257]get_tls_enable_from_hcdev: read enable status from hccn_cdev.ko success.
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:56.977.930 [tls_common.c:288]get_flash_tls_config: read hccp_certs_eqpt_cb1 from flash success.
+[WARNING] NET(29956,hccp_service.bin):2026-09-30-13:45:57.063.684 [tls_common.c:173]dev_read_flash: flash[hccp_certs_eqpt_cb2] is not set before, dev[0] ret[-1] err_code[2].
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.065.171 [rs_tls.c:1594]tid:29956,rs_ssl_ca_ky_init: ssl ctx ca ky init success
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:57.066.137 [tls_common.c:288]get_flash_tls_config: read hccp_certs_mng_cb from flash success.
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:57.066.193 [tls_common.c:257]get_tls_enable_from_hcdev: read enable status from hccn_cdev.ko success.
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:57.066.413 [tls_common.c:288]get_flash_tls_config: read hccp_certs_eqpt_cb1 from flash success.
+[WARNING] NET(29956,hccp_service.bin):2026-09-30-13:45:57.151.025 [tls_common.c:173]dev_read_flash: flash[hccp_certs_eqpt_cb2] is not set before, dev[0] ret[-1] err_code[2].
+[WARNING] NET(29956,hccp_service.bin):2026-09-30-13:45:57.235.538 [tls_common.c:173]dev_read_flash: flash[hccp_certs_eqpt_cb3] is not set before, dev[0] ret[-1] err_code[2].
+[WARNING] NET(29956,hccp_service.bin):2026-09-30-13:45:57.320.556 [tls_common.c:173]dev_read_flash: flash[hccp_certs_eqpt_cb4] is not set before, dev[0] ret[-1] err_code[2].
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.320.668 [rs_tls.c:1008]tid:29956,rs_ssl_get_ca_data: get certs count 3
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.320.698 [rs_tls.c:1009]tid:29956,rs_ssl_get_ca_data: get new certs count 3 from cb1, 0 from cb2, 0 from cb3, 0 from cb4
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.320.997 [rs_tls.c:424]tid:29956,rs_tls_load_cert: read x509 success
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.030 [rs_tls.c:564]tid:29956,rs_ssl_verify_cert_chain: rs_tls_load_cert for leaf_cert ok
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.056 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:1, new_cert_len:2097
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.189 [rs_tls.c:424]tid:29956,rs_tls_load_cert: read x509 success
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.216 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:2, new_cert_len:2012
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.336 [rs_tls.c:424]tid:29956,rs_tls_load_cert: read x509 success
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.359 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:3, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.376 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 0 cert 3 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.392 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:4, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.407 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 0 cert 4 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.422 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:5, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.442 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 0 cert 5 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.457 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:6, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.471 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 0 cert 6 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.485 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:7, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.499 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 0 cert 7 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.513 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:0, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.526 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 1 cert 0 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.541 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:1, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.555 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 1 cert 1 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.569 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:2, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.583 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 1 cert 2 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.604 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:3, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.618 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 1 cert 3 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.633 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:4, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.646 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 1 cert 4 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.662 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:5, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.676 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 1 cert 5 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.691 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:6, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.704 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 1 cert 6 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.718 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:7, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.732 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 1 cert 7 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.751 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:0, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.765 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 2 cert 0 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.779 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:1, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.793 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 2 cert 1 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.943 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:2, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.954 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 2 cert 2 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.961 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:3, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.966 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 2 cert 3 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.973 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:4, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.979 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 2 cert 4 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.986 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:5, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.992 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 2 cert 5 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.321.998 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:6, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.004 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 2 cert 6 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.012 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:7, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.022 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 2 cert 7 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.029 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:0, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.035 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 3 cert 0 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.041 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:1, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.047 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 3 cert 1 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.053 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:2, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.059 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 3 cert 2 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.065 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:3, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.071 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 3 cert 3 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.077 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:4, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.090 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 3 cert 4 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.097 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:5, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.103 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 3 cert 5 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.109 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:6, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.115 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 3 cert 6 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.121 [rs_tls.c:531]tid:29956,rs_ssl_x509_store_init: j:7, new_cert_len:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.127 [rs_tls.c:533]tid:29956,rs_ssl_x509_store_init: cb 3 cert 7 length is 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.322.133 [rs_tls.c:549]tid:29956,rs_ssl_x509_store_init: add cert ok
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.323.927 [rs_tls.c:488]tid:29956,rs_ssl_verify_cert: X509_verify_cert ok
+[WARNING] NET(29956,hccp_service.bin):2026-09-30-13:45:57.409.008 [tls_common.c:173]dev_read_flash: flash[hccp_certs_revoc_cb] is not set before, dev[0] ret[-1] err_code[2].
+[WARNING] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.409.065 [rs_tls.c:1444]tid:29956,rs_ssl_get_crl_data: no crl data, ret -2, crl_len 0, buf_len 0
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:57.409.379 [tls_common.c:288]get_flash_tls_config: read hccp_certs_mng_cb from flash success.
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:57.409.415 [tls_common.c:257]get_tls_enable_from_hcdev: read enable status from hccn_cdev.ko success.
+[INFO] NET(29956,hccp_service.bin):2026-09-30-13:45:57.409.660 [tls_common.c:288]get_flash_tls_config: read hccp_certs_eqpt_cb1 from flash success.
+[WARNING] NET(29956,hccp_service.bin):2026-09-30-13:45:57.493.234 [tls_common.c:173]dev_read_flash: flash[hccp_certs_eqpt_cb2] is not set before, dev[0] ret[-1] err_code[2].
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.493.698 [rs_tls.c:1594]tid:29956,rs_ssl_ca_ky_init: ssl ctx ca ky init success
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.493.716 [rs_tls.c:1707]tid:29956,rs_ssl_inner_init: SSL INIT ok
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.493.760 [rs_epoll.c:730]tid:29956,RsEpollConnectHandleInit: rs_create_epoll ok
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.493.955 [rs_epoll.c:751]tid:29956,RsEpollConnectHandleInit: RS INIT OK!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.493.994 [rs_epoll.c:526]tid:29992,RsEpollHandle: <EPOLL> thread begin! thread_id:4397960521760, pid:29956, ppid:4112
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.494.127 [rs_epoll.c:488]tid:29992,BindDataCpu: halGetDeviceInf chip = 0 dev_num = 1, ccpu = 1 dcpu = 2 acpu = 6 cpuNum = 9
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.494.149 [rs.c:335]tid:29956,RsInitRscbCfg: rs_epoll_connect_handle_init ok cost [0.417000] ms
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.494.019 [rs_epoll.c:661]tid:29993,RsConnectHandle: <SOCKET> thread begin! thread_id:4397952067616, pid:29956, ppid:4112
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.494.972 [ra_adp.c:2243]tid:29956,HccpInit: rs_init ok cost [900.328003] ms
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.495.026 [ra_adp.c:2253]tid:29956,HccpInit: rs_bind_hostpid ok cost [0.013000] ms
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.495.184 [rs_ping.c:87]tid:29994,RsPingHandle: <PING> thread begin! thread_id:4397943613472, pid:29956, ppid:4112
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.495.232 [ra_adp.c:2263]tid:29956,HccpInit: rs_ping_handle_init ok cost [0.186000] ms
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.495.298 [esched_adapt.c:73][ascend][curpid:29956,29956][drv][event-sche][esched_attach_device_inner]Attach refcnt++. (refcnt=2; dev_id=0)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.495.368 [event_sched.c:1076][ascend][curpid:29956,29956][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=30; sched_mode=2; grpName=)
+[INFO] TDT(29956,hccp_service.bin):2026-09-30-13:45:57.495.388 [tsd_event_client.cpp:452][IsSubscribe][tid:29956] [TsdEventClient] halEschedCreateGrp dev[0] group[30] type[2] success
+[INFO] TDT(29956,hccp_service.bin):2026-09-30-13:45:57.495.404 [tsd_event_interface.cpp:44][SubscribeEvent][tid:29956] Dev[0] begin subscribe event mask[524288][19].
+[INFO] TDT(29956,hccp_service.bin):2026-09-30-13:45:57.495.422 [tsd_event_interface.cpp:51][SubscribeEvent][tid:29956] halEschedSubscribeEvent success, deviceId[0], groupId[30], threadIndex[0] eventBitmap[524288].
+[INFO] TDT(29956,hccp_service.bin):2026-09-30-13:45:57.495.463 [tsd_event_client.cpp:208][SubmitEvent][tid:29956] [TsdEventClient] Begin submit event to dev[0] pid[4112] eventType[19] subeventId[0].
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.497.810 [buff_manage_kernel_api.c:170][ascend][curpid:29956,29960][drv][bufmng][buff_pool_get_fd]pid 29956 open dev file, pool_fd 37
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.497.967 [buff_manage_kernel_api.c:350][ascend][curpid:29956,29960][drv][bufmng][buff_pool_attach_ex]Pool attach. (pool=22; fd=37; attach_pid=29956; uid=23; cache_type=0)
+[INFO] UNIFIEDBUS(29956,hccp_service.bin):2026-09-30-13:45:57.501.398 [UMMU][ummu_allocate_tid:1274] allocate tid = 4339, mapt_mode = 0
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.501.508 [hdc_ub_adapt.c:46][ascend][curpid:29956,29960][drv][hdc][hdc_alloc_token_id]alloc token_id successfully.(token_id=1110784)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.503.065 [hdc_ub_drv.c:1520][ascend][curpid:29956,29960][drv][hdc][hdc_ub_accept]Accept success(l_id=228; r_id=231; handle=36; devid=0; server="service_rdma_v2";l_jfr_4=3005; jfs=10588; jfc_r=8678; jfc_s=8677; r_jfr_4=27617; tjfr=27617)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.503.203 [hdc_core.c:1761][ascend][curpid:29956,29960][drv][hdc][drvHdcSetSessionReference]Get pid number. (session=228; pid=29956)
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.503.383 [ra_adp.c:1151]tid:29961,RaSetPid: ra get pid is [1928858]
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.503.435 [rs_rdma.c:1319]tid:29961,RsSetHostPid: phyId[0] host_pid[1928858]
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.503.454 [ra_adp.c:1155]tid:29961,RaSetPid: ra_set_pid finish
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.510.856 [rs_epoll.c:496]tid:29992,BindDataCpu: bind cgroup success!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.510.914 [rs_epoll.c:433]tid:29992,SetAffinity: dev is 0 thread 4397960521760 is running in processor 1.
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.510.922 [rs_epoll.c:501]tid:29992,BindDataCpu: chip_id[0] bind data cpu[1] success
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.511.117 [ra_adp_async.c:163]tid:29998,RaHwAsyncHdcInit: chip_id(0)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.512.356 [hdc_ub_drv.c:1520][ascend][curpid:29956,29998][drv][hdc][hdc_ub_accept]Accept success(l_id=229; r_id=232; handle=42; devid=0; server="service_rdma_v2";l_jfr_4=3006; jfs=10589; jfc_r=8680; jfc_s=8679; r_jfr_4=27618; tjfr=27618)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.512.406 [hdc_core.c:1761][ascend][curpid:29956,29998][drv][hdc][drvHdcSetSessionReference]Get pid number. (session=229; pid=29956)
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.520.638 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:2, chipId:0, dieId:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.522.235 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:3, chipId:0, dieId:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.523.644 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:2, chipId:0, dieId:1
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.524.000 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:2, chipId:0, dieId:1
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.524.282 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:2, chipId:0, dieId:1
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.524.542 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:2, chipId:0, dieId:1
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.524.785 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:2, chipId:0, dieId:1
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.525.093 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:2, chipId:0, dieId:1
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.525.344 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:2, chipId:0, dieId:1
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.525.608 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:2, chipId:0, dieId:1
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.525.847 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:2, chipId:0, dieId:1
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.527.137 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:4, chipId:0, dieId:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.527.448 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:4, chipId:0, dieId:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.527.717 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:4, chipId:0, dieId:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.527.959 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:4, chipId:0, dieId:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.528.210 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:4, chipId:0, dieId:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.528.447 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:4, chipId:0, dieId:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.528.683 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:4, chipId:0, dieId:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.528.944 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:4, chipId:0, dieId:0
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.529.313 [esched_adapt.c:73][ascend][curpid:29956,29961][drv][event-sche][esched_attach_device_inner]Attach refcnt++. (refcnt=3; dev_id=0)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.529.411 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=32; sched_mode=2; grpName=drv_msg_grp)
+[INFO] UNIFIEDBUS(29956,hccp_service.bin):2026-09-30-13:45:57.531.171 [UMMU][ummu_allocate_tid:1274] allocate tid = 4342, mapt_mode = 0
+[INFO] UNIFIEDBUS(29956,hccp_service.bin):2026-09-30-13:45:57.531.500 [UMMU][ummu_allocate_tid:1274] allocate tid = 4344, mapt_mode = 0
+[INFO] UNIFIEDBUS(29956,hccp_service.bin):2026-09-30-13:45:57.531.720 [UMMU][ummu_allocate_tid:1274] allocate tid = 4346, mapt_mode = 0
+[INFO] UNIFIEDBUS(29956,hccp_service.bin):2026-09-30-13:45:57.531.903 [UMMU][ummu_allocate_tid:1274] allocate tid = 4348, mapt_mode = 0
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.532.200 [va_reserve_agent.c:76][ascend][curpid:29956,29961][drv][devmm][svm_agent_static_reserve_va]Reserve static va success. (va=0x100000000000; size=167125767421952)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.532.339 [esched_adapt.c:73][ascend][curpid:29956,29961][drv][event-sche][esched_attach_device_inner]Attach refcnt++. (refcnt=4; dev_id=0)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.532.413 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=33; sched_mode=2; grpName=ESCHED_GRP_0)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.532.504 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=34; sched_mode=2; grpName=ESCHED_GRP_1)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.532.601 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=35; sched_mode=2; grpName=ESCHED_GRP_2)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.532.686 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=36; sched_mode=2; grpName=ESCHED_GRP_3)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.532.766 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=37; sched_mode=2; grpName=ESCHED_GRP_4)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.532.851 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=38; sched_mode=2; grpName=ESCHED_GRP_5)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.532.925 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=39; sched_mode=2; grpName=ESCHED_GRP_6)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.533.002 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=40; sched_mode=2; grpName=ESCHED_GRP_7)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.533.080 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=41; sched_mode=2; grpName=ESCHED_GRP_8)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.533.156 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=42; sched_mode=2; grpName=ESCHED_GRP_9)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.533.240 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=43; sched_mode=2; grpName=ESCHED_GRP_10)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.533.316 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=44; sched_mode=2; grpName=ESCHED_GRP_11)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.533.395 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=45; sched_mode=2; grpName=ESCHED_GRP_12)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.533.473 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=46; sched_mode=2; grpName=ESCHED_GRP_13)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.533.552 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=47; sched_mode=2; grpName=ESCHED_GRP_14)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.533.632 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=48; sched_mode=2; grpName=ESCHED_GRP_15)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.533.727 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=49; sched_mode=1; grpName=ESCHED_GRP_AI)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.533.744 [event_sched_app.c:224][ascend][curpid:29956,29961][drv][event-sche][esched_aicpu_res_init]Init aicpu sync msg grp. (gid=49)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.533.843 [event_sched.c:1076][ascend][curpid:29956,29961][drv][event-sche][esched_create_grp]Esched create grp success. (dev_id=0; gid=50; sched_mode=2; grpName=DRV_ESCHED_GRP)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.534.174 [event_sched_app.c:258][ascend][curpid:29956,29961][drv][event-sche][esched_drv_res_init]Init drv inner sync res group success. (dev_id=0, gid=50)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.534.191 [event_sched_app.c:297][ascend][curpid:29956,29961][drv][event-sche][esched_res_init]Init sync res group success. (dev_id=0)
+[INFO] DRV(29956,hccp_service.bin):2026-09-30-13:45:57.535.707 [buff_manage_kernel_api.c:350][ascend][curpid:29956,29961][drv][bufmng][buff_pool_attach_ex]Pool attach. (pool=21; fd=37; attach_pid=29956; uid=23; cache_type=0)
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.540.596 [rs_ub.c:103]tid:29961,RsUbGetUeInfo: func_id:3, chipId:0, dieId:0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.540.658 [rs_ub.c:290]tid:29961,RsUbGetDevAttr: max_jetty:7163, maxJfsInlineLen:1023, sqMaxDepth:8192, rqMaxDepth:32768, sqMaxSge:13, rqMaxSge:4 maxReadSize:268435456 maxWriteSize:268435456 maxMsgSize:65536
+[INFO] UNIFIEDBUS(29956,hccp_service.bin):2026-09-30-13:45:57.541.333 [UMMU][ummu_allocate_tid:1274] allocate tid = 4351, mapt_mode = 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.541.365 [rs_ub.c:1033]tid:29961,RsUbCtxTokenIdAlloc: alloc success, tokenId addr:0x3ffec019c40, devIndex:0x10003
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.867.943 [aicpusd_event_manager.cpp:596][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[5] and task id[5] from hwts.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.867.963 [aicpusd_event_manager.cpp:607][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[65535] and task id[5] in version[1].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.867.971 [aicpusd_event_manager.cpp:677][HWTSKernelEventMessageParse][tid:29941] Kernel type of current task is [2], dataDumpEnableMode[0].
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:45:57.867.979 [aicpu_context.cc:196][SetTaskAndStreamId][tid:29941][AICPU_SHARDER] Set taskId:[5] and streamId:[65535] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.867.986 [aicpusd_event_manager.cpp:797][ExecuteHWTSEventTask][tid:29941] Begin to ExecuteTsKernelTask, mailboxId[3], serialNo[82], streamId[65535], taskId[5], dataDumpEnableMode[0], kernelType[2], subeventId[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.867.993 [aicpusd_event_process.cpp:762][ExecuteTsKernelTask][tid:29941] Begin to process aicpu engine process, kernelType[2].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.868.002 [aicpu_processer.cc:31][aeCallInterface][tid:29941][AICPU_PROCESSER] Begin to CallKernelApi, kernelType=2.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.868.021 [ae_so_manager.cc:586][CreateSingleSoMgr][tid:29941][AICPU_PROCESSER] soname[/usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libccl_kernel.so]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.868.030 [ae_so_manager.cc:589][CreateSingleSoMgr][tid:29941][AICPU_PROCESSER] MallocMemory, func=new, size=152, purpose=SingleSoManager object
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.868.090 [ae_so_manager.cc:191][OpenSo][tid:29941][AICPU_PROCESSER] Open so /usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libccl_kernel.so begin.
+[INFO] ATRACE(29926,aicpu_scheduler):2026-09-30-13:45:57.874.331 [trace_attr.c:118](tid:29941) doesn't set env ASCEND_LOG_DEVICE_FLUSH_TIMEOUT, use default timeout=0ms.
+[INFO] ATRACE(29926,aicpu_scheduler):2026-09-30-13:45:57.874.358 [trace_attr.c:186](tid:29941) attr init successfully, timeout=0ms.
+[INFO] ATRACE(29926,aicpu_scheduler):2026-09-30-13:45:57.874.374 [trace_recorder.c:249](tid:29941) use root path: /var/log/npu/slog
+[INFO] ATRACE(29926,aicpu_scheduler):2026-09-30-13:45:57.874.388 [trace_recorder.c:191](tid:29941) doesn't set env ASCEND_TRACE_RECORD_NUM, use default dir num=10.
+[INFO] ATRACE(29926,aicpu_scheduler):2026-09-30-13:45:57.874.397 [trace_event.c:147](tid:29941) init trace event successfully
+[INFO] ATRACE(29926,aicpu_scheduler):2026-09-30-13:45:57.874.431 [trace_core.c:94](tid:29941) init trace successfully.
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.874.444 [mc2_trace_utils.cc:554] [29941]mmDlopen success
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.903.019 [ae_so_manager.cc:200][OpenSo][tid:29941][AICPU_PROCESSER] Open so /usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libccl_kernel.so success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.903.060 [ae_so_manager.cc:619][CreateSingleSoMgr][tid:29941][AICPU_PROCESSER] Loaded so successfully, soFile=/usr/lib64/aicpu_kernels/0/aicpu_kernels_device/libccl_kernel.so.
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:45:57.903.088 [aicpu_context.cc:169][SetOpname][tid:29941][AICPU_SHARDER] set op name to RunAicpuThreadInit for thread[5]
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:45:57.903.097 [aicpu_context.cc:212][SetBlockIdxAndBlockNum][tid:29941][AICPU_SHARDER] Set blockIdx:[0] and blockNum:[1] success.
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.903.111 [aicpu_thread_kernel.cc:52] [29941][RunAicpuThreadInit] threadNum[1], deviceLogicId[0], deviceType[6]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.903.129 [adapter_rts.cc:593] [29941][Set][hrtSetWorkModeAicpu]work mode aicpu[1]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.903.672 [aicpu_thread_process.cc:188] [29941][AicpuThreadProcess][ResumeThread] threadParam[0] raw bytes: 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 00 00 00 02 00 00 00 02 00 00 00 15 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.903.738 [adapter_hal.cc:357] [29941]Entry-hrtDrvGetPlatformInfo
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.903.760 [aicpu_ts_thread.cc:38] [29941]HcclThread::Init, is DeviceSide
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.903.773 [aicpu_ts_thread.cc:424] [29941][AicpuTsThread][Init]streamType[2], notifyLoadType[0].
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.903.897 [rtsq_base.cc:99] [29941]RtsqBase::QuerySqBaseAddr end
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.903.922 [rtsq_base.cc:36] [29941]RtsqBase, devPhyId=0, localDevId=0, streamId=127, sqId=2, sqDepth=2049, sqBaseAddr=0x3ffd9656000, currentHead=0, currentTail=0, cqeStatus=0, taskId=0
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.903.936 [aicpu_thread_process.cc:48] [29941][AicpuThreadProcess][InitThreads] threadArray[0] = [4397308321344]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.903.944 [aicpu_ts_primitives_c_adpt.cc:1149] [29941][HcommThreadRegisterDfx] ThreadHandle[0x3ffd4001e40] Init success
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.903.955 [aicpu_thread_process.cc:57] [29941][AicpuThreadProcess][InitThreads] comm identifier[], init threads num[1] success
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:45:57.903.966 [aicpu_daemon_service.cpp:74] [29941]Background thread register daemonFunc, daemonFunc[0x3ffc5860110]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.903.978 [aicpusd_mc2_maintenance_thread.cpp:102][InitMc2MaintenanceProcess][tid:29941] type[0]
+[INFO] TDT(29926,aicpu_scheduler):2026-09-30-13:45:57.904.050 [tsd_event_interface.cpp:24][WaitAndProcessEvent][tid:29926] Begin process event msg.
+[INFO] TDT(29926,aicpu_scheduler):2026-09-30-13:45:57.904.081 [tsd_event_client.cpp:478][ProcessEvent][tid:29926] Begin to process tsd event.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.904.092 [aicpusd_mc2_maintenance_thread.cpp:261][CreateMc2MantenanceThread][tid:29926] aicpu create ctrl thread type[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.904.387 [aicpusd_mc2_maintenance_thread.cpp:160][SetMc2MantenanceThreadAffinity][tid:30017] prepare bind threadId=4397391015008 to cpuId=0, type=0
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.904.425 [aicpusd_mc2_maintenance_thread.cpp:179][StartProcessEvent][tid:30017] StartProcessEvent type[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.904.474 [aicpu_processer.cc:41][aeCallInterface][tid:29941][AICPU_PROCESSER] [PERF] start=1790747157868008, end=1790747157904473, use=36465 us
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:45:57.904.482 [aicpu_context.cc:169][SetOpname][tid:29941][AICPU_SHARDER] set op name to null for thread[5]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.904.490 [aicpusd_event_process.cpp:807][PostProcessTsKernelTask][tid:29941] Aicpu engine process success, result[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:45:57.904.504 [aicpusd_event_manager.cpp:778][ProcessHWTSKernelEvent][tid:29941] End send ack to Ts, kernelType[2], deviceId[0], subevent_id[0], mailboxId[3], serialNo[82], streamId[65535], taskId[5], result[0], originResult[0], status[0].
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.907.858 [rs_drv_socket.c:563]tid:29961,RsFindListenNode: listen node for IP(::8:a80:10:0:a0b:6106), serverPort(60001) is not listen!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.907.888 [rs_drv_socket.c:563]tid:29961,RsFindListenNode: listen node for IP(::8:a80:10:0:a0b:6106), serverPort(60001) is not listen!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.907.896 [rs_drv_socket.c:620]tid:29961,RsListenNodeAlloc: create listen node for IP(::8:a80:10:0:a0b:6106)!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.907.934 [rs_socket.c:580]tid:29961,RsSocketListenBindListen: listen state:1, then bind for (IP ::8:a80:10:0:a0b:6106 : port 60001)
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.907.950 [rs_socket.c:599]tid:29961,RsSocketListenBindListen: socket bind: family 10, port 25066, scopeId 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.907.957 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[0] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.907.965 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[1] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.907.971 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[2] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.907.978 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[3] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.907.984 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[4] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.907.990 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[5] 0x08
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.907.996 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[6] 0x0a
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.908.002 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[7] 0x80
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.908.009 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[8] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.908.015 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[9] 0x10
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.908.021 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[10] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.908.027 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[11] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.908.033 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[12] 0x0a
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.908.039 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[13] 0x0b
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.908.046 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[14] 0x61
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.908.053 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[15] 0x06
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.908.071 [rs_socket.c:623]tid:29961,RsSocketListenBindListen: IP ::8:a80:10:0:a0b:6106 : port 60001 begin listen, fd:51 !
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.908.315 [rs_drv_socket.c:749]tid:29961,RsFindWhiteList: white list for IP(::8:a80:10:0:a0b:6106) doesn't exist!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:45:57.908.331 [rs_drv_socket.c:727]tid:29961,RsFindWhiteListNode: white list node for IP(::8:a80:10:0:a0b:6206), tag(AUTOMATIC_SOCKET_TAG_::8:a80:10:0:a0b:6106_::8:a80:10:0:a0b:6206) doesn't exist!
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:06.185.883 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145244 KB, vmHwm:145244 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:06.186.192 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:06.186.257 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:16.198.809 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145244 KB, vmHwm:145244 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:16.199.023 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:16.199.101 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:26.213.445 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145244 KB, vmHwm:145244 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:26.213.658 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:26.213.736 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:36.237.351 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145244 KB, vmHwm:145244 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:36.237.567 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:36.237.640 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:46.271.857 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145244 KB, vmHwm:145244 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:46.272.080 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:46.272.155 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:56.295.186 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145244 KB, vmHwm:145244 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:56.295.409 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:46:56.295.484 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:46:56.593.428 [rs.c:127]tid:29961,RsHeartbeatAlivePrint: pthread[ra_thread] is alive!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:46:57.496.863 [rs.c:127]tid:29994,RsHeartbeatAlivePrint: pthread[ping_pthread] is alive!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:46:57.557.840 [rs.c:127]tid:29993,RsHeartbeatAlivePrint: pthread[connect_pthread] is alive!
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:06.310.213 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145244 KB, vmHwm:145244 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:06.310.448 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:06.310.529 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:16.324.770 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145244 KB, vmHwm:145244 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:16.324.978 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:16.325.049 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:26.341.437 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145244 KB, vmHwm:145244 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:26.341.666 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:26.341.736 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:36.379.124 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145244 KB, vmHwm:145244 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:36.379.364 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:36.379.438 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.909.230 [rs_socket.c:909]tid:29961,RsSocketListenStop: IP(::8:a80:10:0:a0b:6106) close listen fd:51 !
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.912.267 [aicpusd_event_manager.cpp:596][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[6] and task id[6] from hwts.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.912.312 [aicpusd_event_manager.cpp:607][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[65535] and task id[6] in version[1].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.912.319 [aicpusd_event_manager.cpp:677][HWTSKernelEventMessageParse][tid:29941] Kernel type of current task is [2], dataDumpEnableMode[0].
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:47:37.912.335 [aicpu_context.cc:196][SetTaskAndStreamId][tid:29941][AICPU_SHARDER] Set taskId:[6] and streamId:[65535] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.912.345 [aicpusd_event_manager.cpp:797][ExecuteHWTSEventTask][tid:29941] Begin to ExecuteTsKernelTask, mailboxId[3], serialNo[83], streamId[65535], taskId[6], dataDumpEnableMode[0], kernelType[2], subeventId[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.912.353 [aicpusd_event_process.cpp:762][ExecuteTsKernelTask][tid:29941] Begin to process aicpu engine process, kernelType[2].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.912.363 [aicpu_processer.cc:31][aeCallInterface][tid:29941][AICPU_PROCESSER] Begin to CallKernelApi, kernelType=2.
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:47:37.912.403 [aicpu_context.cc:169][SetOpname][tid:29941][AICPU_SHARDER] set op name to RunAicpuChannelDestroyV2 for thread[5]
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:47:37.912.412 [aicpu_context.cc:212][SetBlockIdxAndBlockNum][tid:29941][AICPU_SHARDER] Set blockIdx:[0] and blockNum:[1] success.
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.912.428 [aicpu_channel_process.cc:240] [29941][AicpuChannelProcess][AicpuChannelDestroy] commParam->channelList[0x12000001c000], commParam->listNum[1]
+[WARNING] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.912.438 [dev_aicpu_ts_channel_mgr.cc:66] [29941][DevAicpuTsChannelMgr][DestroyChannel] handle[0x12000001c000] not found
+[WARNING] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.912.448 [aicpu_channel_process.cc:263] [29941][AicpuChannelProcess][AicpuChannelDestroy] handle[0x12000001c000] not found in ub/hcomm maps, maybe already destroyed?
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.912.456 [aicpu_channel_process.cc:268] [29941][AicpuChannelProcess][AicpuChannelDestroy] aicpu_task End.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.912.463 [aicpu_processer.cc:41][aeCallInterface][tid:29941][AICPU_PROCESSER] [PERF] start=1790747257912369, end=1790747257912463, use=94 us
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:47:37.912.471 [aicpu_context.cc:169][SetOpname][tid:29941][AICPU_SHARDER] set op name to null for thread[5]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.912.479 [aicpusd_event_process.cpp:807][PostProcessTsKernelTask][tid:29941] Aicpu engine process success, result[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.912.490 [aicpusd_event_manager.cpp:778][ProcessHWTSKernelEvent][tid:29941] End send ack to Ts, kernelType[2], deviceId[0], subevent_id[0], mailboxId[3], serialNo[83], streamId[65535], taskId[6], result[0], originResult[0], status[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.917.730 [aicpusd_event_manager.cpp:596][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[7] and task id[7] from hwts.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.917.741 [aicpusd_event_manager.cpp:607][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[65535] and task id[7] in version[1].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.917.747 [aicpusd_event_manager.cpp:677][HWTSKernelEventMessageParse][tid:29941] Kernel type of current task is [2], dataDumpEnableMode[0].
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:47:37.917.754 [aicpu_context.cc:196][SetTaskAndStreamId][tid:29941][AICPU_SHARDER] Set taskId:[7] and streamId:[65535] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.917.760 [aicpusd_event_manager.cpp:797][ExecuteHWTSEventTask][tid:29941] Begin to ExecuteTsKernelTask, mailboxId[3], serialNo[84], streamId[65535], taskId[7], dataDumpEnableMode[0], kernelType[2], subeventId[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.917.767 [aicpusd_event_process.cpp:762][ExecuteTsKernelTask][tid:29941] Begin to process aicpu engine process, kernelType[2].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.917.774 [aicpu_processer.cc:31][aeCallInterface][tid:29941][AICPU_PROCESSER] Begin to CallKernelApi, kernelType=2.
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:47:37.917.790 [aicpu_context.cc:169][SetOpname][tid:29941][AICPU_SHARDER] set op name to RunAicpuThreadDestroy for thread[5]
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:47:37.917.797 [aicpu_context.cc:212][SetBlockIdxAndBlockNum][tid:29941][AICPU_SHARDER] Set blockIdx:[0] and blockNum:[1] success.
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.917.806 [aicpu_thread_kernel.cc:63] [29941][RunAicpuThreadDestroy] threadNum[1]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.917.814 [aicpu_thread_process.cc:91] [29941][AicpuThreadProcess][AicpuThreadDestroy] threadNum[1]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.917.822 [exception_handle.cc:200] [29941][ExceptionHandle][ClearStreamState] sqId[2] state cleared
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.918.008 [aicpu_daemon_service.cpp:87] [29941]Background thread unregister daemonFunc, daemonFunc[0x3ffc5860110]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.918.020 [aicpu_thread_process.cc:168] [29941][AicpuThreadProcess][StopBackGroundThread] success
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.918.029 [aicpu_thread_process.cc:128] [29941][AicpuThreadProcess][AicpuThreadDestroy] success
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.918.036 [aicpu_processer.cc:41][aeCallInterface][tid:29941][AICPU_PROCESSER] [PERF] start=1790747257917780, end=1790747257918036, use=256 us
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:47:37.918.044 [aicpu_context.cc:169][SetOpname][tid:29941][AICPU_SHARDER] set op name to null for thread[5]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.918.053 [aicpusd_event_process.cpp:807][PostProcessTsKernelTask][tid:29941] Aicpu engine process success, result[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.918.067 [aicpusd_event_manager.cpp:778][ProcessHWTSKernelEvent][tid:29941] End send ack to Ts, kernelType[2], deviceId[0], subevent_id[0], mailboxId[3], serialNo[84], streamId[65535], taskId[7], result[0], originResult[0], status[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.927.187 [aicpusd_event_manager.cpp:596][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[8] and task id[8] from hwts.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.927.210 [aicpusd_event_manager.cpp:607][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[65535] and task id[8] in version[1].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.927.218 [aicpusd_event_manager.cpp:677][HWTSKernelEventMessageParse][tid:29941] Kernel type of current task is [2], dataDumpEnableMode[0].
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:47:37.927.229 [aicpu_context.cc:196][SetTaskAndStreamId][tid:29941][AICPU_SHARDER] Set taskId:[8] and streamId:[65535] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.927.236 [aicpusd_event_manager.cpp:797][ExecuteHWTSEventTask][tid:29941] Begin to ExecuteTsKernelTask, mailboxId[3], serialNo[85], streamId[65535], taskId[8], dataDumpEnableMode[0], kernelType[2], subeventId[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.927.244 [aicpusd_event_process.cpp:762][ExecuteTsKernelTask][tid:29941] Begin to process aicpu engine process, kernelType[2].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.927.252 [aicpu_processer.cc:31][aeCallInterface][tid:29941][AICPU_PROCESSER] Begin to CallKernelApi, kernelType=2.
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:47:37.927.265 [aicpu_context.cc:169][SetOpname][tid:29941][AICPU_SHARDER] set op name to RunAicpuThreadInit for thread[5]
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:47:37.927.274 [aicpu_context.cc:212][SetBlockIdxAndBlockNum][tid:29941][AICPU_SHARDER] Set blockIdx:[0] and blockNum:[1] success.
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.927.283 [aicpu_thread_kernel.cc:52] [29941][RunAicpuThreadInit] threadNum[1], deviceLogicId[0], deviceType[6]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.927.294 [adapter_rts.cc:593] [29941][Set][hrtSetWorkModeAicpu]work mode aicpu[1]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.927.814 [aicpu_thread_process.cc:188] [29941][AicpuThreadProcess][ResumeThread] threadParam[0] raw bytes: 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 00 00 00 06 00 00 00 06 00 00 00 16 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.927.841 [aicpu_ts_thread.cc:38] [29941]HcclThread::Init, is DeviceSide
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.927.853 [aicpu_ts_thread.cc:424] [29941][AicpuTsThread][Init]streamType[2], notifyLoadType[0].
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.927.954 [rtsq_base.cc:99] [29941]RtsqBase::QuerySqBaseAddr end
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.927.973 [rtsq_base.cc:36] [29941]RtsqBase, devPhyId=0, localDevId=0, streamId=127, sqId=6, sqDepth=2049, sqBaseAddr=0x3ffd9656000, currentHead=0, currentTail=0, cqeStatus=0, taskId=0
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.927.987 [aicpu_thread_process.cc:48] [29941][AicpuThreadProcess][InitThreads] threadArray[0] = [4397308321344]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.927.995 [aicpu_ts_primitives_c_adpt.cc:1149] [29941][HcommThreadRegisterDfx] ThreadHandle[0x3ffd4001e40] Init success
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.928.005 [aicpu_thread_process.cc:57] [29941][AicpuThreadProcess][InitThreads] comm identifier[], init threads num[1] success
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:47:37.928.014 [aicpu_daemon_service.cpp:74] [29941]Background thread register daemonFunc, daemonFunc[0x3ffc5860110]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.928.023 [aicpusd_mc2_maintenance_thread.cpp:102][InitMc2MaintenanceProcess][tid:29941] type[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.928.033 [aicpusd_mc2_maintenance_thread.cpp:115][InitMc2MaintenanceProcess][tid:29941] the thread is already init, threadId[30017], type[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.928.050 [aicpu_processer.cc:41][aeCallInterface][tid:29941][AICPU_PROCESSER] [PERF] start=1790747257927259, end=1790747257928049, use=790 us
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:47:37.928.057 [aicpu_context.cc:169][SetOpname][tid:29941][AICPU_SHARDER] set op name to null for thread[5]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.928.065 [aicpusd_event_process.cpp:807][PostProcessTsKernelTask][tid:29941] Aicpu engine process success, result[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:37.928.086 [aicpusd_event_manager.cpp:778][ProcessHWTSKernelEvent][tid:29941] End send ack to Ts, kernelType[2], deviceId[0], subevent_id[0], mailboxId[3], serialNo[85], streamId[65535], taskId[8], result[0], originResult[0], status[0].
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.678 [rs_drv_socket.c:563]tid:29961,RsFindListenNode: listen node for IP(::8:a80:10:0:a0b:6106), serverPort(60001) is not listen!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.714 [rs_drv_socket.c:563]tid:29961,RsFindListenNode: listen node for IP(::8:a80:10:0:a0b:6106), serverPort(60001) is not listen!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.724 [rs_drv_socket.c:620]tid:29961,RsListenNodeAlloc: create listen node for IP(::8:a80:10:0:a0b:6106)!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.760 [rs_socket.c:580]tid:29961,RsSocketListenBindListen: listen state:1, then bind for (IP ::8:a80:10:0:a0b:6106 : port 60001)
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.778 [rs_socket.c:599]tid:29961,RsSocketListenBindListen: socket bind: family 10, port 25066, scopeId 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.845 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[0] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.853 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[1] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.859 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[2] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.865 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[3] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.871 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[4] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.877 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[5] 0x08
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.883 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[6] 0x0a
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.889 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[7] 0x80
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.895 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[8] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.901 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[9] 0x10
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.908 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[10] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.914 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[11] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.920 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[12] 0x0a
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.926 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[13] 0x0b
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.932 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[14] 0x61
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.938 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[15] 0x06
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:37.931.963 [rs_socket.c:623]tid:29961,RsSocketListenBindListen: IP ::8:a80:10:0:a0b:6106 : port 60001 begin listen, fd:51 !
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:46.408.291 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145348 KB, vmHwm:145348 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:46.409.106 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:46.409.708 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:56.433.860 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145348 KB, vmHwm:145348 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:56.434.086 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:47:56.434.157 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:56.593.731 [rs.c:127]tid:29961,RsHeartbeatAlivePrint: pthread[ra_thread] is alive!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:57.506.950 [rs.c:127]tid:29994,RsHeartbeatAlivePrint: pthread[ping_pthread] is alive!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:47:57.558.600 [rs.c:127]tid:29993,RsHeartbeatAlivePrint: pthread[connect_pthread] is alive!
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:06.453.691 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145348 KB, vmHwm:145348 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:06.453.933 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:06.454.004 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:16.468.385 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145348 KB, vmHwm:145348 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:16.468.614 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:16.468.680 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:26.485.767 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145348 KB, vmHwm:145348 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:26.486.000 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:26.486.069 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:36.509.854 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145348 KB, vmHwm:145348 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:36.510.102 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:36.510.173 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:46.544.957 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145348 KB, vmHwm:145348 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:46.545.205 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:46.545.276 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:56.553.850 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145348 KB, vmHwm:145348 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:56.554.080 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:48:56.554.150 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:48:56.594.926 [rs.c:127]tid:29961,RsHeartbeatAlivePrint: pthread[ra_thread] is alive!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:48:57.507.594 [rs.c:127]tid:29994,RsHeartbeatAlivePrint: pthread[ping_pthread] is alive!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:48:57.649.030 [rs.c:127]tid:29993,RsHeartbeatAlivePrint: pthread[connect_pthread] is alive!
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:06.562.746 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145348 KB, vmHwm:145348 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:06.562.997 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:06.563.074 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:16.585.055 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145348 KB, vmHwm:145348 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:16.585.305 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:16.585.378 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.933.059 [rs_socket.c:909]tid:29961,RsSocketListenStop: IP(::8:a80:10:0:a0b:6106) close listen fd:51 !
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.936.546 [aicpusd_event_manager.cpp:596][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[9] and task id[9] from hwts.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.936.581 [aicpusd_event_manager.cpp:607][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[65535] and task id[9] in version[1].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.936.589 [aicpusd_event_manager.cpp:677][HWTSKernelEventMessageParse][tid:29941] Kernel type of current task is [2], dataDumpEnableMode[0].
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:49:17.936.608 [aicpu_context.cc:196][SetTaskAndStreamId][tid:29941][AICPU_SHARDER] Set taskId:[9] and streamId:[65535] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.936.619 [aicpusd_event_manager.cpp:797][ExecuteHWTSEventTask][tid:29941] Begin to ExecuteTsKernelTask, mailboxId[3], serialNo[86], streamId[65535], taskId[9], dataDumpEnableMode[0], kernelType[2], subeventId[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.936.630 [aicpusd_event_process.cpp:762][ExecuteTsKernelTask][tid:29941] Begin to process aicpu engine process, kernelType[2].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.936.638 [aicpu_processer.cc:31][aeCallInterface][tid:29941][AICPU_PROCESSER] Begin to CallKernelApi, kernelType=2.
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:49:17.936.653 [aicpu_context.cc:169][SetOpname][tid:29941][AICPU_SHARDER] set op name to RunAicpuChannelDestroyV2 for thread[5]
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:49:17.936.660 [aicpu_context.cc:212][SetBlockIdxAndBlockNum][tid:29941][AICPU_SHARDER] Set blockIdx:[0] and blockNum:[1] success.
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.936.680 [aicpu_channel_process.cc:240] [29941][AicpuChannelProcess][AicpuChannelDestroy] commParam->channelList[0x12000001c000], commParam->listNum[1]
+[WARNING] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.936.689 [dev_aicpu_ts_channel_mgr.cc:66] [29941][DevAicpuTsChannelMgr][DestroyChannel] handle[0x12000001c000] not found
+[WARNING] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.936.699 [aicpu_channel_process.cc:263] [29941][AicpuChannelProcess][AicpuChannelDestroy] handle[0x12000001c000] not found in ub/hcomm maps, maybe already destroyed?
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.936.706 [aicpu_channel_process.cc:268] [29941][AicpuChannelProcess][AicpuChannelDestroy] aicpu_task End.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.936.713 [aicpu_processer.cc:41][aeCallInterface][tid:29941][AICPU_PROCESSER] [PERF] start=1790747357936644, end=1790747357936713, use=69 us
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:49:17.936.720 [aicpu_context.cc:169][SetOpname][tid:29941][AICPU_SHARDER] set op name to null for thread[5]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.936.733 [aicpusd_event_process.cpp:807][PostProcessTsKernelTask][tid:29941] Aicpu engine process success, result[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.936.746 [aicpusd_event_manager.cpp:778][ProcessHWTSKernelEvent][tid:29941] End send ack to Ts, kernelType[2], deviceId[0], subevent_id[0], mailboxId[3], serialNo[86], streamId[65535], taskId[9], result[0], originResult[0], status[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.942.834 [aicpusd_event_manager.cpp:596][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[10] and task id[10] from hwts.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.942.848 [aicpusd_event_manager.cpp:607][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[65535] and task id[10] in version[1].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.942.855 [aicpusd_event_manager.cpp:677][HWTSKernelEventMessageParse][tid:29941] Kernel type of current task is [2], dataDumpEnableMode[0].
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:49:17.942.861 [aicpu_context.cc:196][SetTaskAndStreamId][tid:29941][AICPU_SHARDER] Set taskId:[10] and streamId:[65535] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.942.867 [aicpusd_event_manager.cpp:797][ExecuteHWTSEventTask][tid:29941] Begin to ExecuteTsKernelTask, mailboxId[3], serialNo[87], streamId[65535], taskId[10], dataDumpEnableMode[0], kernelType[2], subeventId[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.942.874 [aicpusd_event_process.cpp:762][ExecuteTsKernelTask][tid:29941] Begin to process aicpu engine process, kernelType[2].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.942.880 [aicpu_processer.cc:31][aeCallInterface][tid:29941][AICPU_PROCESSER] Begin to CallKernelApi, kernelType=2.
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:49:17.942.886 [aicpu_context.cc:169][SetOpname][tid:29941][AICPU_SHARDER] set op name to RunAicpuThreadDestroy for thread[5]
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:49:17.942.893 [aicpu_context.cc:212][SetBlockIdxAndBlockNum][tid:29941][AICPU_SHARDER] Set blockIdx:[0] and blockNum:[1] success.
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.942.900 [aicpu_thread_kernel.cc:63] [29941][RunAicpuThreadDestroy] threadNum[1]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.942.907 [aicpu_thread_process.cc:91] [29941][AicpuThreadProcess][AicpuThreadDestroy] threadNum[1]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.942.914 [exception_handle.cc:200] [29941][ExceptionHandle][ClearStreamState] sqId[6] state cleared
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.942.924 [aicpu_daemon_service.cpp:87] [29941]Background thread unregister daemonFunc, daemonFunc[0x3ffc5860110]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.942.930 [aicpu_thread_process.cc:168] [29941][AicpuThreadProcess][StopBackGroundThread] success
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.942.936 [aicpu_thread_process.cc:128] [29941][AicpuThreadProcess][AicpuThreadDestroy] success
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.942.942 [aicpu_processer.cc:41][aeCallInterface][tid:29941][AICPU_PROCESSER] [PERF] start=1790747357942885, end=1790747357942942, use=57 us
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:49:17.942.949 [aicpu_context.cc:169][SetOpname][tid:29941][AICPU_SHARDER] set op name to null for thread[5]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.942.954 [aicpusd_event_process.cpp:807][PostProcessTsKernelTask][tid:29941] Aicpu engine process success, result[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.942.963 [aicpusd_event_manager.cpp:778][ProcessHWTSKernelEvent][tid:29941] End send ack to Ts, kernelType[2], deviceId[0], subevent_id[0], mailboxId[3], serialNo[87], streamId[65535], taskId[10], result[0], originResult[0], status[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.956.789 [aicpusd_event_manager.cpp:596][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[11] and task id[11] from hwts.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.956.811 [aicpusd_event_manager.cpp:607][GetStreamIdAndTaskIdFromEvent][tid:29941] Get stream id[65535] and task id[11] in version[1].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.956.818 [aicpusd_event_manager.cpp:677][HWTSKernelEventMessageParse][tid:29941] Kernel type of current task is [2], dataDumpEnableMode[0].
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:49:17.956.828 [aicpu_context.cc:196][SetTaskAndStreamId][tid:29941][AICPU_SHARDER] Set taskId:[11] and streamId:[65535] success.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.956.835 [aicpusd_event_manager.cpp:797][ExecuteHWTSEventTask][tid:29941] Begin to ExecuteTsKernelTask, mailboxId[3], serialNo[88], streamId[65535], taskId[11], dataDumpEnableMode[0], kernelType[2], subeventId[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.956.842 [aicpusd_event_process.cpp:762][ExecuteTsKernelTask][tid:29941] Begin to process aicpu engine process, kernelType[2].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.956.850 [aicpu_processer.cc:31][aeCallInterface][tid:29941][AICPU_PROCESSER] Begin to CallKernelApi, kernelType=2.
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:49:17.956.860 [aicpu_context.cc:169][SetOpname][tid:29941][AICPU_SHARDER] set op name to RunAicpuThreadInit for thread[5]
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:49:17.956.868 [aicpu_context.cc:212][SetBlockIdxAndBlockNum][tid:29941][AICPU_SHARDER] Set blockIdx:[0] and blockNum:[1] success.
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.956.877 [aicpu_thread_kernel.cc:52] [29941][RunAicpuThreadInit] threadNum[1], deviceLogicId[0], deviceType[6]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.956.889 [adapter_rts.cc:593] [29941][Set][hrtSetWorkModeAicpu]work mode aicpu[1]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.957.395 [aicpu_thread_process.cc:188] [29941][AicpuThreadProcess][ResumeThread] threadParam[0] raw bytes: 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 00 00 00 0a 00 00 00 0a 00 00 00 17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.957.419 [aicpu_ts_thread.cc:38] [29941]HcclThread::Init, is DeviceSide
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.957.430 [aicpu_ts_thread.cc:424] [29941][AicpuTsThread][Init]streamType[2], notifyLoadType[0].
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.957.459 [rtsq_base.cc:99] [29941]RtsqBase::QuerySqBaseAddr end
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.957.473 [rtsq_base.cc:36] [29941]RtsqBase, devPhyId=0, localDevId=0, streamId=127, sqId=10, sqDepth=2049, sqBaseAddr=0x3ffd9656000, currentHead=0, currentTail=0, cqeStatus=0, taskId=0
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.957.485 [aicpu_thread_process.cc:48] [29941][AicpuThreadProcess][InitThreads] threadArray[0] = [4397308321344]
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.957.493 [aicpu_ts_primitives_c_adpt.cc:1149] [29941][HcommThreadRegisterDfx] ThreadHandle[0x3ffd4001e40] Init success
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.957.502 [aicpu_thread_process.cc:57] [29941][AicpuThreadProcess][InitThreads] comm identifier[], init threads num[1] success
+[INFO] HCCL(29926,aicpu_scheduler):2026-09-30-13:49:17.957.513 [aicpu_daemon_service.cpp:74] [29941]Background thread register daemonFunc, daemonFunc[0x3ffc5860110]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.957.520 [aicpusd_mc2_maintenance_thread.cpp:102][InitMc2MaintenanceProcess][tid:29941] type[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.957.528 [aicpusd_mc2_maintenance_thread.cpp:115][InitMc2MaintenanceProcess][tid:29941] the thread is already init, threadId[30017], type[0]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.957.544 [aicpu_processer.cc:41][aeCallInterface][tid:29941][AICPU_PROCESSER] [PERF] start=1790747357956856, end=1790747357957544, use=688 us
+[INFO] AICPU(29926,aicpu_scheduler):2026-09-30-13:49:17.957.553 [aicpu_context.cc:169][SetOpname][tid:29941][AICPU_SHARDER] set op name to null for thread[5]
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.957.562 [aicpusd_event_process.cpp:807][PostProcessTsKernelTask][tid:29941] Aicpu engine process success, result[0].
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:17.957.575 [aicpusd_event_manager.cpp:778][ProcessHWTSKernelEvent][tid:29941] End send ack to Ts, kernelType[2], deviceId[0], subevent_id[0], mailboxId[3], serialNo[88], streamId[65535], taskId[11], result[0], originResult[0], status[0].
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.115 [rs_drv_socket.c:563]tid:29961,RsFindListenNode: listen node for IP(::8:a80:10:0:a0b:6106), serverPort(60001) is not listen!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.160 [rs_drv_socket.c:563]tid:29961,RsFindListenNode: listen node for IP(::8:a80:10:0:a0b:6106), serverPort(60001) is not listen!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.169 [rs_drv_socket.c:620]tid:29961,RsListenNodeAlloc: create listen node for IP(::8:a80:10:0:a0b:6106)!
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.205 [rs_socket.c:580]tid:29961,RsSocketListenBindListen: listen state:1, then bind for (IP ::8:a80:10:0:a0b:6106 : port 60001)
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.220 [rs_socket.c:599]tid:29961,RsSocketListenBindListen: socket bind: family 10, port 25066, scopeId 0
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.227 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[0] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.234 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[1] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.241 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[2] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.247 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[3] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.253 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[4] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.259 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[5] 0x08
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.265 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[6] 0x0a
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.272 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[7] 0x80
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.278 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[8] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.284 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[9] 0x10
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.290 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[10] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.296 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[11] 0x00
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.302 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[12] 0x0a
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.308 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[13] 0x0b
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.314 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[14] 0x61
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.320 [rs_socket.c:602]tid:29961,RsSocketListenBindListen: socket bind: addr[15] 0x06
+[INFO] HCCP(29956,hccp_service.bin):2026-09-30-13:49:17.961.338 [rs_socket.c:623]tid:29961,RsSocketListenBindListen: IP ::8:a80:10:0:a0b:6106 : port 60001 begin listen, fd:51 !
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:26.608.246 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145356 KB, vmHwm:145356 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:26.608.487 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:26.608.564 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:36.644.232 [aicpusd_proc_mem_statistic.cpp:188][GetOsMemInfoFromFile][tid:29943] vmRss:145356 KB, vmHwm:145356 KB.
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:36.644.467 [aicpusd_proc_mem_statistic.cpp:128][GetXsMemInfoFromFile][tid:29943] allocsize:0 B, real size:0 B, summary: 0        0       .
+[INFO] CCECPU(29926,aicpu_scheduler):2026-09-30-13:49:36.644.542 [aicpusd_proc_mem_statistic.cpp:58][GetSvmInfoFromFile][tid:29943] Opening svmMem file was not successful, pid=29926, errno=2, reason:No such file or directory

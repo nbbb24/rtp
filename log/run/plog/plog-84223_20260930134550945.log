@@ -1,0 +1,400 @@
+[INFO] RUNTIME(84223,python3):2026-09-30-13:45:50.751.927 [task_fail_callback_data_manager.cc:89] 84223 TaskFailCallBackManager: Constructor.
+[INFO] RUNTIME(84223,python3):2026-09-30-13:45:50.751.929 [xpu_task_fail_callback_data_manager.cc:59] 84223 XpuTaskFailCallBackManager: XpuTaskFailCallBackManager Constructor.
+[INFO] TDT(84223,python3):2026-09-30-13:45:50.755.337 [package_worker_factory.cpp:38][RegisterPackageWorkerCreator][tid:84223] Register[2] package worker was created successfully
+[INFO] TDT(84223,python3):2026-09-30-13:45:50.755.341 [package_worker_factory.cpp:38][RegisterPackageWorkerCreator][tid:84223] Register[3] package worker was created successfully
+[INFO] HCCL(84223,python3):2026-09-30-13:45:50.849.035 [adapter_rts.cc:3089] [84223][adapter_rts.cc][CallBackInitRts] g_deviceType [9] g_deviceLogicId [-1] g_devicePhyId [-1]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:50.888.963 [aicpu_task_cache.cc:24] [84223][AicpuTaskCache][AicpuTaskCache] create aicpu task cache at 0x0000fffdedbeebd8: maxCacheBytes[10485760]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:50.897.656 [op_base.cc:5820] [84223][HcclCommRegCommStateCallback]Register commStateCallBack success, regName[aicpu_task_cache_callback], args[(nil)].
+[INFO] RUNTIME(84223,python3):2026-09-30-13:45:55.608.673 [runtime_keeper.cc:216] 84223 CreateRuntimeImpl: Open libruntime_v200.so successfully
+[INFO] RUNTIME(84223,python3):2026-09-30-13:45:55.609.572 [runtime.cc:5031] 84223 GetVisibleDevices: ASCEND_RT_VISIBLE_DEVICES param was not set
+[INFO] DRV(84223,python3):2026-09-30-13:45:55.629.695 [hdc_ub_common.c:242][ascend][curpid:84223,84223][drv][hdc][hdc_get_urma_init_time_cost]hdc urma_cost info (us).(dev_id=0; l_id=227; unique_val=2147740997; type=5; ctx_c=0; get_token=67; attr_c:0; dev_info=11313; urma_ctx=1426; alloc_id=0; share_seg=0; lock_wait=0; urma_init=12741; own_reg_re=0; alloc_tid=1319; own_reg(new)=24; reg_dmp=0; jfc=258; jfs=77; jfr:96; post_wr=1; res_init=1778; get_tp=25; import=245)
+[INFO] ATRACE(84223,python3):2026-09-30-13:45:55.635.153 [atrace_client_core.c:160](tid:84223) start to receive device[0] trace log.
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.635.189 [client_manager.cpp:148][GetInstance][tid:84223] [ClientManager] Current mode:1
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.635.234 [process_mode_manager.cpp:168][GetLogLevel][tid:84223] [TsdClient] get ASCEND_GLOBAL_LOG_LEVEL [1] ASCEND_GLOBAL_EVENT_ENABLE [] ASCEND_MODULE_LOG_LEVEL []
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.635.282 [tsd_process_controller.cpp:58][OpenProcess][tid:84223] [ProcessModeManager] enter into open process deviceId[0] rankSize[0]
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.635.312 [capability_manager.cpp:401][IsSupportCommonSink][tid:84223] mutexFile[/usr/local/Ascend/driver/lib64/driver/sink_file_mutex_0.cfg] found means supporting common sink
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.635.482 [device_comm_agent.cpp:41][InitTsdClient][tid:84223] [TsdClient] deviceId[0] begin to init hdc client
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.645.586 [version_verify.cpp:39][SetVersionInfo][tid:84223] VersionVerify: send client version to server
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.646.932 [version_verify.cpp:71][PeerVersionCheck][tid:84223] VersionVerify: Check client version info, server[1230], client[1230]
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.646.937 [version_verify.cpp:92][ParseVersionInfo][tid:84223] VersionVerify: pass client version info success
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.646.938 [hdc_client.cpp:243][CheckHdcConnection][tid:84223] Service create hdc successfully.
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.204 [package_env_info.cpp:130][GetShortSocVersion][tid:84223] get short_soc_version:Ascend950
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.297 [package_process_config.cpp:265][SetConfigDataOnHost][tid:84223] insert package:Ascend-aicpu_legacy.tar.gz config
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.312 [package_process_config.cpp:265][SetConfigDataOnHost][tid:84223] insert package:Ascend910-aicpu_legacy.tar.gz config
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.325 [package_process_config.cpp:265][SetConfigDataOnHost][tid:84223] insert package:Ascend310P-aicpu_legacy.tar.gz config
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.343 [package_process_config.cpp:265][SetConfigDataOnHost][tid:84223] insert package:aicpu_hccl.tar.gz config
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.356 [package_process_config.cpp:265][SetConfigDataOnHost][tid:84223] insert package:mc2_server.tar.gz config
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.369 [package_process_config.cpp:265][SetConfigDataOnHost][tid:84223] insert package:aicpu_hcomm.tar.gz config
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.382 [package_process_config.cpp:265][SetConfigDataOnHost][tid:84223] insert package:cann-hixl-compat.tar.gz config
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.396 [package_process_config.cpp:265][SetConfigDataOnHost][tid:84223] insert package:cann-hcomm-compat.tar.gz config
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.409 [package_process_config.cpp:265][SetConfigDataOnHost][tid:84223] insert package:cann-hccd-compat.tar.gz config
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.420 [package_process_config.cpp:265][SetConfigDataOnHost][tid:84223] insert package:cann-udf-compat.tar.gz config
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.432 [package_process_config.cpp:265][SetConfigDataOnHost][tid:84223] insert package:cann-tsch-compat.tar.gz config
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.452 [package_process_config.cpp:265][SetConfigDataOnHost][tid:84223] insert package:cann-hybm-compat.tar.gz config
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.472 [package_process_config.cpp:331][RefreshHostPluginVersions][tid:84223] host plugin pkg:cann-hcomm-compat.tar.gz ini parsed, version:9.2.0 timestamp:20260924_202333545
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.483 [package_process_config.cpp:331][RefreshHostPluginVersions][tid:84223] host plugin pkg:cann-tsch-compat.tar.gz ini parsed, version:9.2.0 timestamp:20260924_202333545
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.486 [hdc_message_builder.cpp:54][SetProcSignPid][tid:84223] [HdcMessageBuilder] tsd get process sign successfully, procpid[1928858]
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.648.516 [version_verify.cpp:117][SpecialFeatureCheck][tid:84223] VersionVerify: previous type[69], supported
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.658.253 [plugin_version_manager.cpp:111][HandleDevicePluginVersionRsp][tid:84223] device plugin pkg:cann-hcomm-compat.tar.gz version:9.2.0 timestamp:20260924_202333545
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.658.255 [plugin_version_manager.cpp:114][HandleDevicePluginVersionRsp][tid:84223] device plugin info rsp, pkgCount:1
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.658.262 [package_loader.cpp:427][LoadPackageConfigInfoToDevice][tid:84223] Receive load package config response result:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.658.277 [capability_manager.cpp:401][IsSupportCommonSink][tid:84223] mutexFile[/usr/local/Ascend/driver/lib64/driver/sink_file_mutex_0.cfg] found means supporting common sink
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.658.280 [package_loader.cpp:133][ShouldLoadLegacyPackage][tid:84223] [TsdClient][logicDeviceId_=0] use legacy package
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.658.392 [package_env_info.cpp:221][CheckPackageExistsOnce][tid:84223] [TsdClient][deviceId=0] pkg size[0] in path[/usr/local/Ascend/cann-9.2.0/opp/built-in/] must be only one, skip send package, packageType[6]
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.658.394 [package_loader.cpp:102][LoadSysOpKernel][tid:84223] [TsdClient][logicDeviceId_=0] cannot find aicpu packages
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.658.407 [capability_manager.cpp:401][IsSupportCommonSink][tid:84223] mutexFile[/usr/local/Ascend/driver/lib64/driver/sink_file_mutex_0.cfg] found means supporting common sink
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.658.419 [package_loader.cpp:464][LoadSinglePackageToDevice][tid:84223] begin to load package:Ascend-aicpu_legacy.tar.gz to device:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.658.426 [package_process_config.cpp:396][GetPkgHostAndDeviceDstPath][tid:84223] get orgFile:/usr/local/Ascend/cann-9.2.0/opp/Ascend/aicpu/Ascend-aicpu_legacy.tar.gz, dstFile:/home/HwHiAiUser/hdcd/device0/aicpu/1928858_Ascend-aicpu_legacy.tar.gz
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.794.341 [package_loader.cpp:491][LoadSinglePackageToDevice][tid:84223] current package:Ascend-aicpu_legacy.tar.gz is same as device, skip load
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.794.345 [package_loader.cpp:464][LoadSinglePackageToDevice][tid:84223] begin to load package:Ascend310P-aicpu_legacy.tar.gz to device:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.794.353 [package_loader.cpp:481][LoadSinglePackageToDevice][tid:84223] cannot find package:Ascend310P-aicpu_legacy.tar.gz, optional is true skip
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.794.355 [package_loader.cpp:464][LoadSinglePackageToDevice][tid:84223] begin to load package:Ascend910-aicpu_legacy.tar.gz to device:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.794.359 [package_loader.cpp:481][LoadSinglePackageToDevice][tid:84223] cannot find package:Ascend910-aicpu_legacy.tar.gz, optional is true skip
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.794.361 [package_loader.cpp:464][LoadSinglePackageToDevice][tid:84223] begin to load package:aicpu_hccl.tar.gz to device:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.794.366 [package_process_config.cpp:396][GetPkgHostAndDeviceDstPath][tid:84223] get orgFile:/usr/local/Ascend/cann-9.2.0/opp/built-in/op_impl/aicpu/kernel/aicpu_hccl.tar.gz, dstFile:/home/HwHiAiUser/hdcd/device0/aicpu/1928858_aicpu_hccl.tar.gz
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.797.718 [package_loader.cpp:491][LoadSinglePackageToDevice][tid:84223] current package:aicpu_hccl.tar.gz is same as device, skip load
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.797.721 [package_loader.cpp:464][LoadSinglePackageToDevice][tid:84223] begin to load package:aicpu_hcomm.tar.gz to device:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.797.729 [package_process_config.cpp:396][GetPkgHostAndDeviceDstPath][tid:84223] get orgFile:/usr/local/Ascend/cann-9.2.0/opp/built-in/op_impl/aicpu/kernel/aicpu_hcomm.tar.gz, dstFile:/home/HwHiAiUser/hdcd/device0/aicpu/1928858_aicpu_hcomm.tar.gz
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.810.507 [package_loader.cpp:491][LoadSinglePackageToDevice][tid:84223] current package:aicpu_hcomm.tar.gz is same as device, skip load
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.810.510 [package_loader.cpp:464][LoadSinglePackageToDevice][tid:84223] begin to load package:cann-hccd-compat.tar.gz to device:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.810.515 [package_loader.cpp:467][LoadSinglePackageToDevice][tid:84223] current package:cann-hccd-compat.tar.gz does not need to load to device:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.810.517 [package_loader.cpp:464][LoadSinglePackageToDevice][tid:84223] begin to load package:cann-hcomm-compat.tar.gz to device:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.810.523 [package_process_config.cpp:396][GetPkgHostAndDeviceDstPath][tid:84223] get orgFile:/usr/local/Ascend/cann-9.2.0/compat/cann-hcomm-compat.tar.gz, dstFile:/home/HwHiAiUser/hdcd/device0/aicpu/1928858_cann-hcomm-compat.tar.gz
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.816.024 [plugin_version_manager.cpp:51][GetPluginUpdateStrategy][tid:84223] [TsdClient][deviceId=0] plugin update strategy from DRV = 0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.816.035 [plugin_version_manager.cpp:96][CompareHostDeviceCompatPluginVersion][tid:84223] host plugin pkg:cann-hcomm-compat.tar.gz equals device, skip. host[9.2.0/20260924_202333545] device[9.2.0/20260924_202333545]
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.816.037 [package_loader.cpp:487][LoadSinglePackageToDevice][tid:84223] skip load compat plugin package:cann-hcomm-compat.tar.gz by version/strategy check
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.816.040 [package_loader.cpp:464][LoadSinglePackageToDevice][tid:84223] begin to load package:cann-hixl-compat.tar.gz to device:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.816.046 [package_process_config.cpp:396][GetPkgHostAndDeviceDstPath][tid:84223] get orgFile:/usr/local/Ascend/cann-9.2.0/opp/built-in/op_impl/aicpu/kernel/cann-hixl-compat.tar.gz, dstFile:/home/HwHiAiUser/hdcd/device0/aicpu/1928858_cann-hixl-compat.tar.gz
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.816.156 [package_loader.cpp:491][LoadSinglePackageToDevice][tid:84223] current package:cann-hixl-compat.tar.gz is same as device, skip load
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.816.158 [package_loader.cpp:464][LoadSinglePackageToDevice][tid:84223] begin to load package:cann-hybm-compat.tar.gz to device:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.816.163 [package_process_config.cpp:396][GetPkgHostAndDeviceDstPath][tid:84223] get orgFile:/usr/local/Ascend/cann-9.2.0/opp/vendors/cust/op_impl/aicpu/hybm/kernel/cann-hybm-compat.tar.gz, dstFile:/home/HwHiAiUser/hdcd/device0/aicpu/1928858_cann-hybm-compat.tar.gz
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.816.199 [package_loader.cpp:491][LoadSinglePackageToDevice][tid:84223] current package:cann-hybm-compat.tar.gz is same as device, skip load
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.816.200 [package_loader.cpp:464][LoadSinglePackageToDevice][tid:84223] begin to load package:cann-tsch-compat.tar.gz to device:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.816.202 [package_loader.cpp:454][SupportLoadPkg][tid:84223] current device chip:15 does not support package:cann-tsch-compat.tar.gz
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.816.203 [package_loader.cpp:467][LoadSinglePackageToDevice][tid:84223] current package:cann-tsch-compat.tar.gz does not need to load to device:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.816.205 [package_loader.cpp:464][LoadSinglePackageToDevice][tid:84223] begin to load package:cann-udf-compat.tar.gz to device:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.816.208 [package_loader.cpp:467][LoadSinglePackageToDevice][tid:84223] current package:cann-udf-compat.tar.gz does not need to load to device:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.816.210 [package_loader.cpp:464][LoadSinglePackageToDevice][tid:84223] begin to load package:mc2_server.tar.gz to device:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.816.213 [package_process_config.cpp:396][GetPkgHostAndDeviceDstPath][tid:84223] get orgFile:/usr/local/Ascend/cann-9.2.0/opp/built-in/op_impl/aicpu/kernel/mc2_server.tar.gz, dstFile:/home/HwHiAiUser/hdcd/device0/aicpu/1928858_mc2_server.tar.gz
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.817.023 [package_loader.cpp:491][LoadSinglePackageToDevice][tid:84223] current package:mc2_server.tar.gz is same as device, skip load
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.817.034 [hdc_message_builder.cpp:54][SetProcSignPid][tid:84223] [HdcMessageBuilder] tsd get process sign successfully, procpid[1928858]
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.817.043 [version_verify.cpp:117][SpecialFeatureCheck][tid:84223] VersionVerify: previous type[6], supported
+[INFO] TDT(84223,python3):2026-09-30-13:45:55.817.089 [tsd_process_controller.cpp:110][WaitOpenRsp][tid:84223] [ProcessModeManager] deviceId[0] sessionId[1] rankSize[0], wait subprocess start response
+[INFO] TDT(84223,python3):2026-09-30-13:45:56.182.135 [tsd_process_controller.cpp:473][ProcessQueueForAdc][tid:84223] [TsdClient] it is unnecessary for current mode[0] to grant queue auth to aicpusd
+[INFO] TDT(84223,python3):2026-09-30-13:45:56.182.137 [tsd_process_controller.cpp:133][LogOpenProcessDuration][tid:84223] [TsdClient][deviceId=0] [sessionId=1] start hccp and computer process success,phase4:[181]ms send open message to device,phase5:[365]ms receive open message to device,phase6:[0]ms process for adc on host,whole duration:[546]ms
+[INFO] DRV(84223,python3):2026-09-30-13:45:56.182.245 [event_sched.c:1499][ascend][curpid:84223,84223][drv][event-sche][esched_device_open]The dev_id has opened. (dev_id=0)
+[INFO] DRV(84223,python3):2026-09-30-13:45:56.183.321 [drv_share_log.c:215][ascend][curpid:84223,84223][drv][devmm][share_log_read_in_single_module]Open. (udevid=65; tgid=1928858)
+[INFO] DRV(84223,python3):2026-09-30-13:45:56.184.229 [va_dev_default_allocator.c:87][ascend][curpid:84223,84223][drv][devmm][va_dev_default_host_va_expand_with_retry]Reserve va success. (va=0x100000000000; size=2199023255552)
+[INFO] DRV(84223,python3):2026-09-30-13:45:56.184.528 [drv_share_log.c:215][ascend][curpid:84223,84223][drv][devmm][share_log_read_in_single_module]Open. (udevid=0; tgid=1928858)
+[INFO] DRV(84223,python3):2026-09-30-13:45:56.421.559 [svm_urma_chan.c:214][ascend][curpid:84223,84223][drv][devmm][svm_urma_chan_init]Urma chan init ok. (devid=0; local=81710470 ns; remote=3670670 ns)
+[INFO] DRV(84223,python3):2026-09-30-13:45:56.422.323 [svm_urma_adapt_master_init.c:205][ascend][curpid:84223,84223][drv][devmm][_svm_urma_master_dev_init]Urma master dev init ok. (devid=0; ub init=85884780 ns; va reserve=262100 ns)
+[INFO] DRV(84223,python3):2026-09-30-13:45:56.444.161 [queue_interface.c:931][ascend][curpid:84223,84223][drv][queuemng][queue_device_open]queue open finish. (dev_id=0)
+[INFO] RUNTIME(84223,python3):2026-09-30-13:45:56.444.301 [raw_device.cc:623] 84223 Init: isAddrFlat:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:56.446.827 [tsd_client.cpp:189][TsdCapabilityGet][tid:84223] TsdCapabilityGet Begin.
+[INFO] TDT(84223,python3):2026-09-30-13:45:56.446.833 [capability_manager.cpp:489][CapabilityGet][tid:84223] [CapabilityManager] enter into CapabilityGet process deviceId[0] type[0].
+[INFO] TDT(84223,python3):2026-09-30-13:45:56.446.840 [hdc_message_builder.cpp:54][SetProcSignPid][tid:84223] [HdcMessageBuilder] tsd get process sign successfully, procpid[1928858]
+[INFO] TDT(84223,python3):2026-09-30-13:45:56.446.844 [version_verify.cpp:117][SpecialFeatureCheck][tid:84223] VersionVerify: previous type[38], supported
+[INFO] TDT(84223,python3):2026-09-30-13:45:56.446.880 [capability_manager.cpp:514][CapabilityGet][tid:84223] [CapabilityManager][deviceId=0] [sessionId=1] [type=0]send capability successfully.
+[INFO] TDT(84223,python3):2026-09-30-13:45:56.451.271 [capability_manager.cpp:564][HandlePidQosRsp][tid:84223] [TsdClient] PidQosMsgProc recvMsg realDeviceId[0] msgType[39] localDevId[0] rspCode[0],pidqos[1]
+[INFO] TDT(84223,python3):2026-09-30-13:45:56.451.275 [capability_manager.cpp:520][CapabilityGet][tid:84223] [CapabilityManager][logicDeviceId_=0][type=0][pidQos=1][ret=0]recv capability response finished.
+[INFO] RUNTIME(84223,python3):2026-09-30-13:45:56.451.281 [engine.cc:99] 84223 Engine: Constructor.
+[INFO] RUNTIME(84223,python3):2026-09-30-13:45:56.451.284 [stars_engine.cc:53] 84223 StarsEngine: Constructor.
+[INFO] RUNTIME(84223,python3):2026-09-30-13:45:56.539.107 [runtime.cc:5577] 84223 CreateReportRasThread: Start report ras thread success!
+[INFO] RUNTIME(84223,python3):2026-09-30-13:45:56.539.172 [npu_driver_res.cc:389] 84482 GetDeviceStatus: GetDeviceStatus status=1.
+[INFO] ATRACE(84223,python3):2026-09-30-13:45:56.545.587 [tracer_mgr_operate.c:67](tid:84223) create object RUNTIME_ATRACE_DEV0_TS0 successfully, exitSave(false), noLock(false).
+[INFO] TDT(84223,python3):2026-09-30-13:45:56.545.603 [client_manager.cpp:202][SetProfilingCallback][tid:84223] [TsdClient] set profiling callback successfully
+[INFO] TDT(84223,python3):2026-09-30-13:45:56.549.852 [sub_process_controller.cpp:120][OpenSubProc][tid:84223] enter into ProcessOpenSubProc subtype:0
+[INFO] TDT(84223,python3):2026-09-30-13:45:56.549.867 [package_env_info.cpp:74][GetAscendLatestIntallPath][tid:84223] latest install path:/usr/local/Ascend/cann-9.2.0
+[INFO] TDT(84223,python3):2026-09-30-13:45:56.549.869 [sub_process_controller.cpp:85][ConstructCommonOpenMsg][tid:84223] runtimePkgPath:/usr/local/Ascend/cann-9.2.0
+[INFO] TDT(84223,python3):2026-09-30-13:45:56.549.874 [hdc_message_builder.cpp:54][SetProcSignPid][tid:84223] [HdcMessageBuilder] tsd get process sign successfully, procpid[1928858]
+[INFO] TDT(84223,python3):2026-09-30-13:45:56.549.878 [version_verify.cpp:117][SpecialFeatureCheck][tid:84223] VersionVerify: previous type[48], supported
+[INFO] TDT(84223,python3):2026-09-30-13:45:57.491.114 [sub_process_controller.cpp:143][OpenSubProc][tid:84223] OpenSubProc success type:0, pid:29956
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.174 [base_config_legacy.cc:24][84223][HCCL_ENV] HCCL_IF_IP set by default to [IpAddress[0000:0000:0000:0000:0000:0000:0000:0000, AF=IPv4, addr=0.0.0.0]]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.177 [base_config_legacy.cc:27][84223][HCCL_ENV] HCCL_IF_BASE_PORT set by default to [65536]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.180 [base_config_legacy.cc:32][84223][HCCL_ENV] HCCL_SOCKET_IFNAME set by default to []
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.182 [base_config_legacy.cc:36][84223][HCCL_ENV] HCCL_WHITELIST_DISABLE set by default to [1]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.186 [base_config_legacy.cc:52][84223][HCCL_ENV] HCCL_HOST_SOCKET_PORT_RANGE set by default to 
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.188 [base_config_legacy.cc:61][84223][HCCL_ENV] HCCL_NPU_SOCKET_PORT_RANGE set by default to 
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.190 [base_config_legacy.cc:89][84223][HCCL_ENV] HCCL_SOCKET_FAMILY set by default to [-1]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.193 [base_config_legacy.cc:92][84223][HCCL_ENV] HCCL_CONNECT_TIMEOUT set by default to [120]s
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.195 [base_config_legacy.cc:105][84223][HCCL_ENV] HCCL_EXEC_TIMEOUT set by default to [1836]s
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.197 [base_config_legacy.cc:117][84223][HCCL_ENV] HCCL_RDMA_TC set by default to [132]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.199 [base_config_legacy.cc:120][84223][HCCL_ENV] HCCL_RDMA_SL set by default to [4]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.200 [base_config_legacy.cc:123][84223][HCCL_ENV] HCCL_RDMA_TIMEOUT set by default to [20]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.202 [base_config_legacy.cc:126][84223][HCCL_ENV] HCCL_RDMA_RETRY_CNT set by default to [7]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.204 [base_config_legacy.cc:129][84223][HCCL_ENV] HCCL_RDMA_QPS_PER_CONNECTION set by default to [1]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.206 [base_config_legacy.cc:134][84223][HCCL_ENV] HCCL_MULTI_QP_THRESHOLD set by default to [524288]B
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.208 [base_config_legacy.cc:139][84223][HCCL_ENV] HCCL_HOST_RDMA_UDP_PORTS_LIST set by default, device config count[0]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.210 [base_config_legacy.cc:144][84223][HCCL_ENV] HCCL_RDMA_QP_PORT_CONFIG_PATH set by default to []
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.212 [base_config_legacy.cc:383][84223][HCCL_ENV] PRIM_QUEUE_GEN_NAME set by default to []
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.214 [base_config_legacy.cc:386][84223][HCCL_ENV] HCCL_BUFFSIZE set by default to [209715200]B
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.219 [base_config_legacy.cc:391][84223][HCCL_ENV] HCCL_OP_EXPANSION_MODE set by default to [HcclAccelerator::AICPU_TS]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.220 [base_config_legacy.cc:411][84223][HCCL_ENV] HCCL_ENTRY_LOG_ENABLE set by default to [0]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.248 [base_config_legacy.cc:414][84223][HCCL_ENV] LD_LIBRARY_PATH set by environment to []
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.251 [base_config_legacy.cc:421][84223][HCCL_ENV] HCCL_DFS_CONFIG task_exception set by default to [1], cluster_heartbeat set by default to [1], rankConsistentState set by default to [0]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.491.254 [base_config_legacy.cc:436][84223][HCCL_ENV] HCCL_DETOUR set by default to [HcclDetourType::HCCL_DETOUR_DISABLE]
+[INFO] HCCP(84223,python3):2026-09-30-13:45:57.491.260 [ra_init.c:169]tid:84223,RaInit: Input parameters: phyId[0], nicPosition:[1] hdcType:[18] enableHdcAsync[1]
+[INFO] HCCP(84223,python3):2026-09-30-13:45:57.491.376 [ra_hdc.c:792]tid:84223,RaHdcInit: hdc init start! logic id is 0, phy id is 0, hdcType is 18
+[INFO] HCCP(84223,python3):2026-09-30-13:45:57.497.805 [ra_hdc.c:828]tid:84223,RaHdcInit: hdc init OK! phyId[0]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.507.055 [plf_debug_config.cc:80][84223][HCCL_ENV] plfDebugConfig set to [0x0]
+[INFO] HCCP(84223,python3):2026-09-30-13:45:57.507.057 [ra_init.c:258]tid:84223,RaSetDebugConfig: Input parameters: phyId[0], nicPosition:[1], debugConfig[0x0]
+[INFO] HCCP(84223,python3):2026-09-30-13:45:57.507.609 [ra_ctx.c:91]tid:84223,RaGetDevEidInfoNum: Input parameters: phy_id[0], nic_position:[1]
+[INFO] HCCP(84223,python3):2026-09-30-13:45:57.510.014 [ra_ctx.c:120]tid:84223,RaGetDevEidInfoList: Input parameters: phy_id[0], nic_position:[1]
+[INFO] HCCP(84223,python3):2026-09-30-13:45:57.523.495 [ra_ctx.c:181]tid:84223,RaCtxInit: Input parameters: phy_id[0], nic_position:[1]
+[INFO] HCCP(84223,python3):2026-09-30-13:45:57.535.728 [ra_common.c:149]tid:84223,RaGetSecRandom: Input parameters: phy_id[0], nic_position:[1]
+[INFO] RUNTIME(84223,python3):2026-09-30-13:45:57.562.864 [runtime.cc:5783] 84483 ReportPageFaultProc: pageFaultSupportFlag_=0.
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.901.639 [stream.cc:259] [84444][HCCL_TRACE]StreamDestroy, streamPtr[0xfffd6c028298], stream id[61]
+[WARNING] HCCL(84223,python3):2026-09-30-13:45:57.901.688 [hcomm_channel_c_adpt.cc:359] [84444]The version of provided [3] is lower than the current version[4], configurations supported by later versions will be ignored.
+[INFO] HCCP(84223,python3):2026-09-30-13:45:57.901.765 [ra_host.c:245]tid:84444,RaSocketInit: socket init:mode=1 phyId=0 family=10 ip=::8:a80:10:0:a0b:6106
+[INFO] HCCP(84223,python3):2026-09-30-13:45:57.901.788 [ra_host.c:848]tid:84444,RaSocketListenStart: Input parameters: [0]th, phyId[0], localIp[::8:a80:10:0:a0b:6106], port[60001]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.902.743 [hcomm_channel_c_adpt.cc:556] [84444][HcommChannelCreate] channels created, channelNum[1], engine[AICPU]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:57.902.869 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:58.903.203 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:45:59.903.589 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:00.911.095 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:01.912.220 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:02.912.640 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:03.913.114 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:04.913.969 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:05.914.392 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:06.915.423 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:07.915.494 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:08.915.924 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:09.917.080 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:10.917.979 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:11.918.608 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:12.918.719 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:13.919.716 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:14.919.911 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:15.919.918 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:16.920.633 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:17.921.799 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:18.922.511 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:19.922.921 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:20.923.378 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:21.923.856 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:22.924.076 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:23.924.270 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:24.925.110 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:25.925.238 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:26.926.042 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:27.926.127 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:28.926.266 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:29.926.852 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:30.927.062 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:31.928.141 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:32.929.136 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:33.929.787 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:34.930.063 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:35.931.186 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:36.931.372 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:37.932.408 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:38.933.479 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:39.934.278 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:40.934.565 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:41.935.364 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:42.935.678 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:43.936.635 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:44.937.691 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:45.937.990 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:46.938.262 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:47.938.819 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:48.939.936 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:49.940.590 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:50.941.704 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:51.942.354 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:52.942.385 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:53.943.035 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:54.943.902 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] DRV(84223,python3):2026-09-30-13:46:55.630.739 [hdc_ub_common.c:514][ascend][curpid:84223,84444][drv][hdc][hdc_get_send_time_cost]hdc send exceed 10 us.(dev_id=0; l_id=231; unique_val=2147741025; type='service_rdma_v2'; jfs_id=28697; jfc_s=54963; find_block:0; memcpy=0; post_jfs_wr=0; wait_jfc=12; poll_jfc:0; ack_rearm_jfc=0; send=12; exceed_times=47161
+[INFO] HCCL(84223,python3):2026-09-30-13:46:55.945.045 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:56.946.149 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:57.947.244 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:58.947.297 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:46:59.948.368 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:00.949.507 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:01.949.728 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:02.949.800 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:03.949.880 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:04.950.674 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:05.955.903 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:06.956.694 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:07.957.309 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:08.957.978 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:09.958.173 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:10.958.917 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:11.959.170 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:12.959.881 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:13.960.965 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:14.962.111 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:15.963.071 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:16.964.014 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:17.964.335 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:18.964.832 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:19.965.950 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:20.966.495 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:21.966.782 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:22.967.467 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:23.968.527 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:24.969.391 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:25.970.322 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:26.970.731 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:27.971.614 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:28.971.924 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:29.972.345 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:30.972.420 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:31.973.432 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:32.973.615 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:33.973.854 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:34.974.690 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:35.975.083 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:36.975.667 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCP(84223,python3):2026-09-30-13:47:37.902.930 [ra_host.c:885]tid:84444,RaSocketListenStop: Input parameters: [0]th, phyId[0], localIp[::8:a80:10:0:a0b:6106]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:37.903.404 [channel_process.cc:992] [84444][ChannelKernelDestroy] listNum[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:37.909.679 [stream.cc:259] [84444][HCCL_TRACE]StreamDestroy, streamPtr[0xfffd6c124138], stream id[61]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:37.917.819 [stream.cc:259] [84444][HCCL_TRACE]StreamDestroy, streamPtr[0xfffd6c124138], stream id[61]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:37.918.766 [stream.cc:259] [84444][HCCL_TRACE]StreamDestroy, streamPtr[0xfffd6c007148], stream id[127]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:37.925.247 [stream.cc:259] [84444][HCCL_TRACE]StreamDestroy, streamPtr[0xfffd6c006f98], stream id[61]
+[WARNING] HCCL(84223,python3):2026-09-30-13:47:37.925.298 [hcomm_channel_c_adpt.cc:359] [84444]The version of provided [3] is lower than the current version[4], configurations supported by later versions will be ignored.
+[INFO] HCCP(84223,python3):2026-09-30-13:47:37.925.392 [ra_host.c:848]tid:84444,RaSocketListenStart: Input parameters: [0]th, phyId[0], localIp[::8:a80:10:0:a0b:6106], port[60001]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:37.926.229 [hcomm_channel_c_adpt.cc:556] [84444][HcommChannelCreate] channels created, channelNum[1], engine[AICPU]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:37.975.959 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:38.976.845 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:39.977.412 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:40.977.778 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:41.978.917 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:42.979.064 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:43.979.851 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:44.980.518 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:45.980.849 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:46.981.066 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:47.981.794 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:48.982.141 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:49.982.507 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:50.983.351 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:51.984.422 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:52.985.539 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:53.985.909 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:54.986.835 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] DRV(84223,python3):2026-09-30-13:47:55.633.107 [hdc_ub_common.c:514][ascend][curpid:84223,84444][drv][hdc][hdc_get_send_time_cost]hdc send exceed 10 us.(dev_id=0; l_id=231; unique_val=2147741025; type='service_rdma_v2'; jfs_id=28697; jfc_s=54963; find_block:0; memcpy=0; post_jfs_wr=0; wait_jfc=18; poll_jfc:0; ack_rearm_jfc=0; send=19; exceed_times=91841
+[INFO] HCCL(84223,python3):2026-09-30-13:47:55.987.160 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:56.987.625 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:57.987.992 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:58.988.341 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:47:59.989.334 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:00.990.200 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:01.990.931 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:02.991.356 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:03.991.445 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:04.991.547 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:05.992.100 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:06.992.752 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:07.993.429 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:08.994.499 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:09.994.891 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:10.995.761 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:11.996.457 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:12.997.584 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:13.997.648 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:14.997.687 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:15.998.042 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:16.998.972 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:17.999.577 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:19.000.690 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:20.001.140 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:21.001.163 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:22.001.609 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:23.002.267 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:24.002.690 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:25.003.794 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:26.004.148 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:27.006.618 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:28.006.936 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:29.007.584 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:30.008.220 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:31.009.236 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:32.009.858 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:33.010.921 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:34.012.048 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:35.012.631 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:36.012.889 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:37.013.656 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:38.014.400 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:39.015.593 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:40.016.145 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:41.016.928 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:42.017.562 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:43.017.869 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:44.019.021 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:45.019.988 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:46.020.002 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:47.021.832 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:48.021.950 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:49.022.899 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:50.023.656 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:51.024.427 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:52.024.618 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:53.025.180 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:54.025.635 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:55.032.782 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] DRV(84223,python3):2026-09-30-13:48:55.634.322 [hdc_ub_common.c:514][ascend][curpid:84223,84444][drv][hdc][hdc_get_send_time_cost]hdc send exceed 10 us.(dev_id=0; l_id=231; unique_val=2147741025; type='service_rdma_v2'; jfs_id=28697; jfc_s=54963; find_block:0; memcpy=0; post_jfs_wr=0; wait_jfc=19; poll_jfc:0; ack_rearm_jfc=1; send=20; exceed_times=137259
+[INFO] HCCL(84223,python3):2026-09-30-13:48:56.033.241 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:57.034.180 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:58.035.235 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:48:59.035.582 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:00.036.497 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:01.036.940 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:02.037.366 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:03.037.451 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:04.037.895 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:05.037.941 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:06.038.483 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:07.039.603 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:08.039.657 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:09.040.200 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:10.040.578 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:11.040.642 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:12.041.710 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:13.042.796 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:14.043.111 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:15.043.397 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:16.043.674 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:17.044.261 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCP(84223,python3):2026-09-30-13:49:17.926.583 [ra_host.c:885]tid:84444,RaSocketListenStop: Input parameters: [0]th, phyId[0], localIp[::8:a80:10:0:a0b:6106]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:17.927.063 [channel_process.cc:992] [84444][ChannelKernelDestroy] listNum[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:17.934.297 [stream.cc:259] [84444][HCCL_TRACE]StreamDestroy, streamPtr[0xfffd6c006f98], stream id[61]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:17.941.377 [stream.cc:259] [84444][HCCL_TRACE]StreamDestroy, streamPtr[0xfffd6c006f98], stream id[61]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:17.942.370 [stream.cc:259] [84444][HCCL_TRACE]StreamDestroy, streamPtr[0xfffd6c124138], stream id[127]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:17.954.504 [stream.cc:259] [84444][HCCL_TRACE]StreamDestroy, streamPtr[0xfffd6c006f98], stream id[61]
+[WARNING] HCCL(84223,python3):2026-09-30-13:49:17.954.561 [hcomm_channel_c_adpt.cc:359] [84444]The version of provided [3] is lower than the current version[4], configurations supported by later versions will be ignored.
+[INFO] HCCP(84223,python3):2026-09-30-13:49:17.954.674 [ra_host.c:848]tid:84444,RaSocketListenStart: Input parameters: [0]th, phyId[0], localIp[::8:a80:10:0:a0b:6106], port[60001]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:17.955.447 [hcomm_channel_c_adpt.cc:556] [84444][HcommChannelCreate] channels created, channelNum[1], engine[AICPU]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:18.045.055 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:19.046.108 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:20.046.854 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:21.047.928 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:22.048.393 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:23.049.127 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:24.049.745 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:25.050.869 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:26.052.002 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:27.052.615 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:28.053.094 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:29.053.149 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:30.053.203 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:31.054.339 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:32.055.104 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:33.055.285 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:34.056.065 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:35.056.713 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:36.057.668 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:37.058.835 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:38.059.184 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:39.059.896 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:40.060.464 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:41.068.287 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:42.068.343 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:43.068.925 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:44.069.334 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:45.069.443 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]
+[INFO] HCCL(84223,python3):2026-09-30-13:49:46.069.559 [channel_process.cc:361] [84444][PrintChannelStatusDistribution] batch[0x12000001c000] link_ready[0] socket_ok[0] connecting[1] abnormal[0] total[1]

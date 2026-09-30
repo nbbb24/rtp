@@ -1,0 +1,7 @@
+[INFO] RUNTIME(84118,python3):2026-09-30-13:45:45.230.634 [task_fail_callback_data_manager.cc:89] 84118 TaskFailCallBackManager: Constructor.
+[INFO] RUNTIME(84118,python3):2026-09-30-13:45:45.230.636 [xpu_task_fail_callback_data_manager.cc:59] 84118 XpuTaskFailCallBackManager: XpuTaskFailCallBackManager Constructor.
+[INFO] TDT(84118,python3):2026-09-30-13:45:45.234.170 [package_worker_factory.cpp:38][RegisterPackageWorkerCreator][tid:84118] Register[2] package worker was created successfully
+[INFO] TDT(84118,python3):2026-09-30-13:45:45.234.174 [package_worker_factory.cpp:38][RegisterPackageWorkerCreator][tid:84118] Register[3] package worker was created successfully
+[INFO] HCCL(84118,python3):2026-09-30-13:45:45.321.925 [adapter_rts.cc:3089] [84118][adapter_rts.cc][CallBackInitRts] g_deviceType [9] g_deviceLogicId [-1] g_devicePhyId [-1]
+[INFO] HCCL(84118,python3):2026-09-30-13:45:45.361.029 [aicpu_task_cache.cc:24] [84118][AicpuTaskCache][AicpuTaskCache] create aicpu task cache at 0x0000fffdcfdeebd8: maxCacheBytes[10485760]
+[INFO] HCCL(84118,python3):2026-09-30-13:45:45.369.630 [op_base.cc:5820] [84118][HcclCommRegCommStateCallback]Register commStateCallBack success, regName[aicpu_task_cache_callback], args[(nil)].
